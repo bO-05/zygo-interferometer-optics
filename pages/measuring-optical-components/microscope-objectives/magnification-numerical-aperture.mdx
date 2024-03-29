@@ -1,0 +1,45 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Magnification and Numerical Aperture
+
+Unlike camera lenses, microscope objectives aren't specified by focal length and maximum focal distance to aperture ratio. Instead, they are characterized by magnification and numerical aperture (NA). Let's briefly discuss these two aspects:
+
+## Magnification
+
+Magnification describes the ratio between the object size and image size that a particular microscope objective is designed for. You can try to use it at a different magnification by changing both the lens-object distance and the lens-image distance. However, if you do that, it will not perform optimally. This is important because microscope optics is required to work close to the theoretical best performance. In this sense, a microscope objective is different from a camera lens, which is designed to give you acceptable image quality over a wide range of object to lens distances.
+
+<Callout>
+Specifying a high magnification is only useful if the sharpness in the image keeps up with the magnification. That's why the Magnification and NA of objectives are related.
+</Callout>
+
+## Numerical Aperture (NA)
+
+NA is a key parameter for resolving small features. By definition, the NA is equal to the refractive index of the medium that contains the object, times the sine of the maximum angle $\theta$ at which light originating from the object can be captured:
+
+$NA = n \times \sin(\theta)$
+
+Where:
+- $n$ is the refractive index of the medium
+- $\theta$ is the maximum angle of light that can be captured
+
+This means that NA increases with the refractive index of the medium and with the value of $\theta$. Since all the objectives discussed here are intended for use in air and not in water or oil, we can simplify things because the refractive index of air is 1. So, for now, we can ignore the refractive index, which means that NA in all cases discussed here is just equal to $\sin(\theta)$.
+
+## Relationship between Magnification and NA
+
+The exact reason why NA is the key parameter for achieving high sharpness is quite fascinating, but let's focus on the formula for now. The size of the smallest features that can theoretically be resolved by a microscope objective is proportional to a constant, times the wavelength of light, divided by the NA:
+
+$Resolution = \frac{k \times \lambda}{NA}$
+
+Where:
+- $k$ is a constant (typically around 0.61)
+- $\lambda$ is the wavelength of light
+
+This means that it is possible to resolve smaller features by either using a shorter wavelength of light or using a higher NA.
+
+This relationship explains why magnification and NA are so closely related in the specification of microscope objectives. Attempting to pair a high magnification with a low NA is pretty useless: it will just result in a magnified image of poor sharpness.
+
+<Callout>
+When selecting a microscope objective, always consider both the magnification and the NA to ensure optimal performance for your application.
+</Callout>
+
+To learn more about how cover slip thickness affects the performance of high-NA objectives, check out the [Cover Slip Thickness](/measuring-optical-components/microscope-objectives/cover-slip-thickness) section.

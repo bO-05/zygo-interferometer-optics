@@ -1,0 +1,44 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Spherical Mirror
+
+In this section, we'll measure the surface shape of a spherical Zerodur mirror using the ZYGO GPI LC interferometer. The mirror is approximately 250mm in diameter with a radius of curvature of 350mm. Originally part of a 1970s Perkin-Elmer wafer scanner system, the first commercial photolithographic system using non-contact exposure of silicon wafers, we can expect this mirror to be highly accurate.
+
+## Measurement Setup
+
+To measure the mirror, we position the focus of the reference element at the center of the mirror's radius of curvature. The tightly focused light beam from the interferometer expands, reflects off the mirror surface, and returns along approximately the same path. It is then recombined with the spherical reference wavefront reflecting off the reference element. Any deviations from a perfect sphere in the mirror surface will cause phase shifts between the light reflecting off the mirror and the reference, observable as interference.
+
+<Steps>
+### Step 1
+
+Place the mirror at the center of the radius of curvature of the reference element.
+
+### Step 2
+
+Align the mirror to ensure the reflected light returns along the same path and recombines with the reference wavefront.
+
+### Step 3
+
+Record interferograms with the mirror under slight tilt to capture any surface deviations.
+</Steps>
+
+## Interferogram Analysis
+
+Here are a few typical interferograms measured with the mirror under slight tilt:
+
+![Interferogram 1](/path/to/interferogram1.jpg)
+![Interferogram 2](/path/to/interferogram2.jpg)
+
+Despite the mirror's strong curvature, it only covers about half the diameter of the total measurement area available. This increases our measurement accuracy to much higher than 1/20th of a wavelength.
+
+Using [DFTfringe](/zygo-gpi-lc-interferometer/interferogram-analysis-dftfringe), we calculate the wavefront differences between the mirror surface and the reference element. The results show that the peak-to-valley accuracy of this mirror is around 1/10th of a wavelength. In terms of surface shape accuracy, the mirror never deviates more than approximately 30nm from a perfect sphere.
+
+<Callout>
+Being able to measure with this level of precision demonstrates the instrument's expected performance and capabilities.
+</Callout>
+
+Interestingly, the wavefront plot reveals a slightly turned down edge on the mirror, albeit very small at around 15nm. This is a familiar feature for those who have attempted to make a telescope mirror by hand.
+
+## Conclusion
+
+Measuring the spherical Zerodur mirror showcases the ZYGO GPI LC interferometer's ability to precisely characterize the surface shape of highly accurate optical components. The results confirm the mirror's expected quality, given its original application in a commercial photolithographic system, and provide insight into the level of precision achievable with this interferometer.

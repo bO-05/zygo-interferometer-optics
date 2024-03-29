@@ -1,0 +1,49 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Upgrading with a Modern Camera
+
+The original ZYGO GPI LC interferometer was equipped with two low-resolution cameras, one for alignment and one for displaying the interferogram. Both cameras had a limited resolution of 320x240 pixels, which is not ideal for detailed interferogram analysis. To improve the interferometer's capabilities, we replaced the original camera with a modern IP camera.
+
+## Selecting the Camera
+
+When choosing a new camera for the interferometer, we considered the following factors:
+
+- **Housing and mounting options**: The camera should have a housing that allows for easy attachment of various lenses.
+- **Space constraints**: The interferometer has limited space inside, so the camera should be compact enough to fit.
+- **Resolution**: The camera should have a higher resolution than the original 320x240 pixels to capture more detail in the interferograms.
+
+After evaluating different options, we settled on an IDS Ethernet camera with a compact 25mm C-mount lens. This combination allows us to capture the full field of the interferometer while covering a large area of the camera sensor.
+
+<Callout type="info">
+Although we used an IDS Ethernet camera for this upgrade, any camera that can be accessed from a computer and store images to disk will work.
+</Callout>
+
+## Installation Process
+
+<Steps>
+
+### Step 1: Remove the old camera
+
+Remove the old camera and lens from the interferometer. In the ZYGO GPI LC, there is ample space to place a new camera [here](/zygo-gpi-lc-interferometer).
+
+### Step 2: Install the mirror bracket
+
+Make a bracket to hold a first surface mirror at a 45-degree angle. This mirror will redirect the vertical beam from the interferometer to a horizontal one, which the new camera can capture.
+
+### Step 3: Mount the camera and lens
+
+Mount the new camera and lens on the bracket, ensuring that the camera is positioned to capture the redirected beam from the mirror.
+
+### Step 4: Connect power and data
+
+Connect the camera to the 12V power supply already present in the interferometer. Bring the camera's UTP connection to the housing of the interferometer using a two-sided UTP female connector. One side connects to the camera, and the other side connects to the PC.
+
+</Steps>
+
+With the new camera installed, you can now capture high-resolution interferograms for detailed analysis using software like [DFTfringe](/zygo-gpi-lc-interferometer/interferogram-analysis-dftfringe).
+
+<Callout type="info">
+The original alignment camera was left in place, as it still works well for alignment purposes and does not require high resolution.
+</Callout>
+
+By upgrading the ZYGO GPI LC interferometer with a modern camera, you can significantly improve its capabilities and perform more advanced interferogram analysis, making it a valuable tool for optical testing and metrology.

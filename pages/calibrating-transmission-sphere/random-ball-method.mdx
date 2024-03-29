@@ -1,0 +1,65 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Random Ball Method
+
+The random ball method is a cost-effective approach for calibrating the reference transmission sphere in an interferometer. This method involves using a small, smooth ball with a reflective surface to measure the surface shape at many random positions and then averaging these measurements.
+
+## Why Use the Random Ball Method?
+
+<Callout type="info">
+The random ball method is an excellent alternative to using expensive, high-accuracy reference surfaces for calibrating transmission spheres. By averaging the measurements from multiple random positions on a ball surface, the errors in individual parts of the surface will eventually average out, iterating to the surface equivalent of a perfect sphere.
+</Callout>
+
+The only remaining error after averaging a sufficient number of measurements is the surface error in the reference sphere itself, as it is systematically present in all individual measurements.
+
+## Materials Needed
+
+To perform the random ball method, you will need:
+
+- A small, smooth ball with a reflective surface (e.g., a precision aluminum oxide bearing ball)
+- A stand to hold the ball in place during measurements
+
+<Callout type="info">
+Precision aluminum oxide bearing balls are an affordable alternative to expensive, high-accuracy SiC balls. The largest bearing balls, typically around 10mm in diameter, have a variation in diameter of about 1 micron, which is sufficient for this calibration method.
+</Callout>
+
+## Calibration Procedure
+
+<Steps>
+
+### Step 1: Set up the calibration stand
+
+Create a stand to hold the ball in place during measurements. One option is to use three quarter-inch bearing balls glued on top of an aluminum rod using epoxy.
+
+### Step 2: Place the ball at the center of curvature
+
+Position the ball at the center of the radius of curvature of the transmission sphere in a random orientation.
+
+### Step 3: Record interferograms
+
+Record an interferogram, then choose a different (random) area on the ball, record another interferogram, and repeat this process for multiple positions on the ball surface.
+
+### Step 4: Evaluate the results
+
+Use interferogram analysis software, such as [DFTfringe](/zygo-gpi-lc-interferometer/interferogram-analysis-dftfringe), to evaluate the surface error in each individual measurement.
+
+### Step 5: Average the measurements
+
+Average the surface error measurements from all the interferograms. As more measurements are added to the average, the surface error will gradually decrease.
+
+### Step 6: Determine the reference sphere accuracy
+
+Continue adding measurements to the average until no further improvement in the result is observed. At this point, the remaining error represents the accuracy of the transmission sphere reference.
+
+</Steps>
+
+## Example Results
+
+Here's an example of how the surface error decreases as more measurements are averaged:
+
+- After 10 measurements: Error drops to 1/10th of a lambda (peak-to-valley)
+- After 50 measurements: Error stabilizes at around 1/20th of a lambda (peak-to-valley)
+
+In this example, the wavefront accuracy of the transmission sphere over its full area is determined to be approximately 1/20th of a lambda. However, when using only a small fraction of the reference surface during actual measurements, the accuracy will be even higher.
+
+By following the random ball method, you can effectively calibrate your transmission sphere reference without the need for expensive, high-accuracy reference surfaces.

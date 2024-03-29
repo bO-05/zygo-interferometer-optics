@@ -1,0 +1,1774 @@
+# [English] Optical Interferometry Part 1_ Introduction & ZYGO GPI layout
+
+Hi everyone,
+Today I want to talk about optical interferometry,  
+
+a method that is frequently used to measure the 
+properties of optical components and systems.  
+
+What initially made me want to do a video about 
+this subject is this ZYGO interferometer, that I  
+
+bought a while ago second hand. A new instrument 
+of this type is financially far out of my reach,  
+
+and I must admit, this one wasn’t a bargain 
+either. But the thing is, I’ve wanted to own  
+
+a high-quality interferometer for a long time, 
+if only to get away from the DIY-setups I’ve  
+
+used so far. And since these instruments are 
+not abundantly available second hand, I just  
+
+had to take this rare opportunity to buy one.
+In case you have no idea what this instrument is:  
+
+with it you can very accurately measure the 
+shape of flat and spherical optical interfaces,  
+
+like the ones you find on lenses and mirrors. And 
+with accurately I mean: in the nanometer range.  
+
+But not only that, you can also measure the 
+performance of complete optical systems. So,  
+
+a good interferometer is an indispensable tool for 
+anyone involved in optical fabrication. Because  
+
+in the end, the quality of your optics is mainly 
+limited by the quality of your testing methods. 
+ 
+
+This particular instrument was produced 
+by ZYGO in August of 1996. It was sold  
+
+to Philips Electronics in Eindhoven, 
+where it was used to check the surface  
+
+shape of lenses for special optical 
+disk drives. From what I understood,  
+
+some of these lenses were produced from small 
+polished glass balls. These were cut in pieces,  
+
+and then transformed into very short 
+focal distance lenses. Now, at some point,  
+
+the activity was transferred to a Philips spin-off 
+called Anteryon and the interferometer was sold to  
+
+an employee, who basically stored it for a couple 
+of years. He then sold it to me, together with a  
+
+black and white monitor and the transmission 
+sphere that was used to test the lenses.
+ 
+
+In this video, I’ll first discuss 
+the principle behind interferometry,  
+
+and then we will look at the layout of the 
+instrument and how it works exactly. And in  
+
+an upcoming video I will show how I pimped the 
+instrument a bit with a modern ccd camera. 
+ 
+
+As I said earlier, in optics manufacture, 
+interferometry is a frequently used method  
+
+to characterize both optical surfaces as well 
+as complete systems. The method is based on  
+
+analyzing interference patterns and extract so 
+called “wavefront” information from them and I  
+
+will discuss the meaning of the word wavefront in 
+a second. Interferometry is an extremely sensitive  
+
+and accurate method that can be used to establish 
+the general shape of an interface, but also things  
+
+like waviness or even surface roughness. It 
+does also have some limitations: The measurement  
+
+range is generally fairly limited to several 
+microns. Also, it’s unsuitable for interfaces that  
+
+contain sharp step-like height features, because 
+these cannot be unambiguously identified. So,  
+
+in general, interferometry is most accurate when 
+the surfaces we want to test are fairly smooth. 
+ 
+
+Now, I just mentioned the word “wavefront”, 
+which I think is not a trivial concept.  
+
+I guess we have all experienced wavefronts at some 
+point in our lives but I’m not referring to those.  
+
+In optics a wavefront is actually a continuous set 
+of points that have identical phase. So, what does  
+
+that mean? Well, from a classical viewpoint, light 
+is an electromagnetic field that harmonically  
+
+oscillates and propagates in space. And at any 
+given point in this process, the electric and  
+
+magnetic field components can be described by 
+the Maxwell equations. So here I’ve tried to  
+
+schematically draw the electromagnetic field in 
+a somewhat larger volume and if you examine the  
+
+phase of these waves, you can identify planes 
+where the phase of the electromagnetic field  
+
+is identical. And a continuous set of points that 
+have the same phase value is called a wavefront. 
+ 
+
+One property of a wavefront is that its shape 
+is always transverse or perpendicular to the  
+
+local direction of wave propagation. Here 
+this is illustrated for a few differently  
+
+shaped wavefronts where the arrows indicate the 
+direction of wave propagation. Now in general,  
+
+phase relationships for different points in 
+space are only well-defined when the waves  
+
+have one specific wavelength. And if we want to 
+do interferometry, it is vital that the light we  
+
+use is of one particular wavelength, which 
+is also called monochromatic light. And in  
+
+the rest of the video, I’ll assume that the 
+light used is more or less monochromatic.
+ 
+
+A frequently used way to generate monochromatic 
+radiation is by means of a laser. This is because,  
+
+the process of stimulated emission which takes 
+place in the laser cavity, favors the generation  
+
+of light in a very narrow wavelength range. 
+Also, the wavefront exiting the laser cavity is  
+
+virtually flat over the aperture. And because the 
+light has an extremely well-defined wavelength,  
+
+in other words it has a very narrow spectral 
+bandwidth, phase relationships in the field  
+
+exiting the laser can be preserved over long 
+distances. Another way to say this is that lasers  
+
+have a large coherence length, which is generally 
+between half a meter up to several kilometers for  
+
+certain special types of lasers. In practice 
+this means that, if we take 2 points A and B in  
+
+the light path and we look at the variations in 
+the phase difference between these 2 points, we  
+
+will find that these will be relatively small. And 
+the distance over which variations in phase remain  
+
+acceptable is called the coherence length. As you 
+can see from this equation, the coherence length  
+
+(Lc) is inversely proportional to the spectral 
+band width (delta nu) of the light source. And  
+
+so light sources with a very narrow emission line 
+will generally have a long coherence length. 
+ 
+
+Another source of monochromatic light frequently 
+used in interferometry is the low-pressure sodium  
+
+lamp, which mainly generates light in a 
+narrow emission band at 589nm. However,  
+
+the spectral bandwidth of the Sodium emission 
+line is much broader than that of lasers and  
+
+the phase relationships generally only 
+hold over distances smaller than a mm.
+ 
+
+Now, measuring the shape of a wavefront 
+directly in the visible part of the  
+
+electromagnetic spectrum is not easy and that is 
+because of the very high frequencies involved.  
+
+For electromagnetic radiation of longer 
+wavelengths, like for example radio waves,  
+
+we can measure the phase of the alternating fields 
+directly. And that is because the oscillations  
+
+have a relatively low frequency, say generally 
+somewhere in the mega- or giga- Hertz range.  
+
+And so, we can point a bunch of antennas to the 
+sky, measure the Electromagnetic signals that  
+
+are received in each of them and establish the 
+shape of the wavefront for a particular frequency  
+
+by looking for phase correlations. And based on 
+this information we can then identify the exact  
+
+direction from which the radiation is emitted. But 
+visible light has a frequency more than a thousand  
+
+times higher than even the highest frequency 
+radio waves. And for frequencies this high, it is  
+
+technically infeasible to measure phase directly 
+for an oscillating electromagnetic field.
+ 
+
+However, what we can easily measure with 
+optical detectors, like CCD- or CMOS-sensors,  
+
+is spatial intensity variations. And 
+that is where interferometry comes in:  
+
+instead of trying to measure the phase in light 
+directly, this method works by studying the  
+
+interference patterns resulting from the addition 
+of a second wavefront that has a known shape.
+ 
+
+Let me start by showing you a very simple 
+example of how this works in light.  
+
+For this experiment we need a monochromatic 
+light source and a flat surface. As a light  
+
+source we’ll use a sodium lamp and for the 
+surface we will use a flat optical test glass.  
+
+Now, a typical air-glass interface 
+reflects about 4% of the incident light  
+
+and with a uniform light source, 
+we observe a uniform reflection.  
+
+Let’s now place 2 differently shaped surfaces on 
+top of this reference surface for evaluation. What  
+
+we observe is that these objects show 2 different 
+interference patterns. The part to the left,  
+
+shows straight lines with equal spacing. And the 
+one to the right, displays these curved lines or  
+
+circular fringes, depending on the exact surface 
+orientation. Now, it’s these intensity variations  
+
+that actually contain detailed information about 
+the difference in shape between reference surface  
+
+and the two surfaces under test. We just need 
+to know how to interpret what we see exactly. 
+ 
+
+So, what do we see? Well let me explain with 
+an animation. I admit, the following is a  
+
+simplification and it’s not correctly visualizing 
+the physics, but it’s actually quite illustrative.  
+
+Here is a wavefront that has just reflected off 
+a flat reference surface, so this wavefront is  
+
+basically also flat. And so the image shows a 
+2D cross section of the flat optical wavefronts.  
+
+If we place a sensor in the path of the 
+light, we can measure the intensity,  
+
+and what we observe is that it is basically the 
+same everywhere and this tells us exactly nothing  
+
+about the shape of the wavefront. Now, let’s add 
+a second wavefront that has reflected of a second  
+
+surface that is slightly tilted. In this example 
+the wavefront is also flat and what we observe  
+
+is that the intensity now becomes non-uniformly. 
+And this is caused by constructive and destructive  
+
+interference between the 2 reflected wavefronts 
+at the second interface. Here, the electromagnetic  
+
+field is the linear sum of the contributions 
+of the fields of the 2 wavefronts. And so,  
+
+in some points where these contributions are 
+always in phase, they add up. On the other hand,  
+
+in places where the two are exactly in out 
+of phase, the field contributions cancel each  
+
+other out and if they are of equal amplitude, 
+effectively the resulting field becomes zero. 
+ 
+
+In the case of 2 flat wavefronts, we will observe 
+linear and equally spaced fringes. The density of  
+
+the interference pattern itself is dependent 
+on the wedge or angle between the surfaces.  
+
+And the position of the fringes is dependent 
+on the distance between the two surfaces. Now,  
+
+you might think that linear and equally spaced 
+fringes are indicative for the presence of 2 flat  
+
+surfaces. And that is partly correct, but 2 curved 
+wavefronts with the same radius of curvature will  
+
+actually also display linear and equally spaced 
+fringes, when displaced or tilted. However,  
+
+when two wavefronts have different radii, this 
+results in curved fringes. This is for example  
+
+the case when we have a flat- and a spherical 
+wavefront interfering. Or when we have 2 spherical  
+
+wavefronts that have a different radius curvature. 
+So, I guess it is important to realize that  
+
+the observed interference pattern only gives us 
+information about differences in wavefront shape.
+ 
+
+In the example just shown with the sodium lamp 
+light, we only observe interference between  
+
+interfaces when they are placed very close 
+together. And that is because of the limited  
+
+coherence length of the light. So whether we see a 
+clear interference pattern is dependent on whether  
+
+stable phase relationships exist between the 
+reflections coming off the two surfaces at the  
+
+point where they start interfering. This means 
+that with a coherence length smaller than a mm,  
+
+the surfaces need to be quite close to each 
+other in order to observe interference fringes. 
+ 
+
+Now I just stated that in constructive 
+interference, the electromagnetic fields  
+
+add up and in destructive interference, the 
+2 contributions cancel each other out. So,  
+
+what does this mean for intensity? Well, 
+light intensity is equivalent to the power  
+
+per unit of surface and so it is actually 
+not the same thing as the magnitude of  
+
+the electromagnetic field. In fact, intensity 
+scales with the square of this field. And so,  
+
+if we have 2 reflections of equal magnitude, say 
+both are 4%, this means that for the location of  
+
+constructive interference, intensity could be 
+4 times as high. And that is actually what is  
+
+generally observed in interference patterns: 
+that the intensity in the bright areas is  
+
+much brighter than the sum of the 2 individual 
+intensities. But of course, if we look on average,  
+
+the intensity over the whole area will still 
+equal to the sum of the 2 individual intensities.
+ 
+
+Anyway, enough background. Let’s return to the 
+ZYGO interferometer itself and take a peek under  
+
+the hood to see what’s going on inside. In order 
+to do that we need to remove 2 different lids:  
+
+the outer one is made of plastic and is 
+basically just cosmetic. The second one is  
+
+made out of aluminum sheet metal and is intended 
+as RF-shielding for the electronics inside. 
+ 
+
+First thing you notice is, that it isn’t awfully 
+full inside. There is a helium Neon laser with  
+
+its high-voltage power supply. Then there are a 
+few optical components like a steering mirror for  
+
+the laser beam, a variable filter that can be 
+moved mechanically using a long rod. This rod  
+
+also operates a switch, that activates either of 
+2 pcb-cameras that are also found in the top part  
+
+of the interferometer. The cameras by the way 
+have CCD-chips of about 6x4mm in size and are  
+
+fairly low resolution. Both cameras have lenses 
+mounted in front of them. One of the camera is  
+
+above a tiny beam splitter, and the other one is 
+above a diffusor with a crosshair printed on it.  
+
+In the bottom compartment, behind the lid 
+here, we find a mains 12V DC power supply,  
+
+a large beam splitter, a mirror under 45 
+degrees and 4-inch collimation lens. And  
+
+apart from a few brackets and mounts that hold 
+the optics together, that is basically it. 
+ 
+
+So you might wonder: why was this thing the 
+price of a luxury car back in 1996? Well,  
+
+apart from I suspect a healthy profit margin, 
+there are several reasons: of course, it’s not  
+
+really a mass manufactured item. But another 
+reason is that every component inside appears  
+
+to be of very high quality. Take for example 
+the Helium Neon laser: according to the label,  
+
+the tube has been specifically selected for this 
+type of instrument. Why? Well, if we look at the  
+
+specification of the coherence length of the 
+interferometer, we see that it is larger than  
+
+100m. This means that the wavelength variations 
+in the laser light need to be extremely low,  
+
+so that phase relationships hold over distances of 
+more than 100m. Now, I calculated what this means  
+
+in terms of frequency stability and found that 
+variations in the frequency of the 632nm light  
+
+cannot be more than 2. 10-7 percent. And so, this 
+means that not just any random laser will do.
+ 
+
+So let me take you through the functionality of 
+all the components step by step using schematics.  
+
+Here is the Helium-Neon laser, which 
+outputs a highly coherent beam of  
+
+light. The direction of the beam can be 
+optimized with a small steering mirror,  
+
+after which the beam goes through the variable 
+attenuation filter. This filter allows adjustment  
+
+of the general brightness of the laser beam. 
+After having passed the attenuation filter, the  
+
+beam is going into a gradient index lens, which 
+is connected to a very small beam splitter. 
+ 
+
+Now, a gradient index lens is a small glass rod 
+that contains a gradient in refractive index,  
+
+that runs from the center to edge of the rod. 
+Since the refractive index has the highest value  
+
+in the center, the optical wave front in the 
+laser beam is gradually delayed more towards  
+
+the center of the rod. The wavefront therefore 
+becomes curved, which effectively results in  
+
+focusing of the light into a tight focal point. 
+And after passing this focal point, the beam  
+
+expands again into a nicely spherical wavefront. A 
+small beam splitter sends the spherical wavefront  
+
+to the partially reflective surface of a 
+second, much larger beam splitter. This  
+
+surface reflects the light towards a collimation 
+lens, where the light exits the instrument. 
+ 
+
+The function of the collimation lens is to 
+convert the spherical wavefront into a flat  
+
+wavefront of 4 inches in diameter. And this 
+flat wavefront can serve as the basis for all  
+
+kinds of interferometric tests. For example, we 
+can place 2 partially reflective flat interfaces  
+
+into this output beam, one being a reference 
+interface and one being the interface that  
+
+we like to test for flatness. And due to 
+the large coherence length of the light,  
+
+more than 100m, these interfaces don’t have 
+the be necessarily very close together.  
+
+The light reflecting off these surfaces 
+is directed back into the interferometer  
+
+approximately along the same path as it came 
+from, goes through the small beam splitter  
+
+again and is then collimated and projected on 
+a CCD chip. And this allows us to observe the  
+
+interference pattern between the 2 reflections 
+and evaluate this visually on the monitor. 
+ 
+
+Now, to steer the light of both the reference 
+and test surface exactly back through the tiny  
+
+beam splitter here, is pretty hard. And 
+you don’t see anything with camera 1,  
+
+until things are almost perfectly aligned. So, to 
+make life a lot easier, the people at ZYGO added  
+
+this alignment functionality to the system. Part 
+of the light from the reflections can pass this  
+
+larger beam splitter. This part continues straight 
+on, is reflected at a 90 degrees angle and then  
+
+reaches a glass diffuser plate that contains a 
+cross-hair pattern. Because this diffusor plate is  
+
+exactly at the focal distance of the collimation 
+lens, the reflections create tiny spots here. And  
+
+their positions can be observed by camera 2 that 
+is only intended for alignment purposes. Now,  
+
+this alignment unit has a much larger field of 
+view and what we can do now is simply align the  
+
+position of surface reflections such that they 
+are at the center of the cross-hair. And when  
+
+that is the case, the system is automatically also 
+aligned on camera 1 and we can immediately observe  
+
+an interferogram. Now, the interferometers 
+that I made myself did not have this kind of  
+
+feature and it must admit that this makes 
+aligning optics really a piece of cake.
+ 
+
+Here you see the location of the collimation 
+lens, viewed from the outside of the instrument.  
+
+In front of it is an adjustment mechanism 
+that is intended for mounting various  
+
+reference surfaces to the interferometer 
+directly, like the F/0.75 transmission  
+
+sphere that came with the interferometer. The 
+adjustment mechanism has 2 degrees of freedom,  
+
+which are tip and tilt. This allows the angle of 
+the transmission reference to be oriented with  
+
+respect to the surface under test.
+When testing optical components,  
+
+you generally test the surface shape before 
+the interfaces get coated. And so in the case  
+
+of glass this means that they reflect around 4% of 
+the incident light. So, the transmission reference  
+
+also needs to reflect around 4% back into the 
+interferometer to get high-contrast fringes.
+ 
+
+To test spherical surfaces, you need a spherical 
+reference surface that somehow reflects 4% of the  
+
+light exiting the interferometer right back into 
+the instrument. Now the way this is achieved is as  
+
+follows: here I’ve drawn a schematic of the inside 
+of a transmission sphere assembly to show you how  
+
+that is achieved. The reference surface is the 
+last interface of the assembly, here indicated in  
+
+yellow. All the other surfaces are anti-reflection 
+coated for the laser wavelength, but even more  
+
+importantly, they are also designed in such a way, 
+that the light reaches the reference interface  
+
+exactly perpendicular. And this means that it is 
+the only interface in the transmission sphere that  
+
+sends a reflection back where it came from and 
+then enters the interferometer as a collimated  
+
+beam. Of course, 96% of the light continues on 
+to the surface under test, which also reflects  
+
+around 4%. And so we observe the interference 
+occurring between these 2 interfaces. 
+ 
+
+With a spherical transmission reference, we 
+can test convex- as well as concave optics.  
+
+For convex optics, only radii smaller than the 
+radius of the transmission sphere itself can be  
+
+tested. For concave optics, the only limitation 
+for the radius to be tested is that it should be  
+
+less than half of the maximum coherence length 
+of the light source which is in this case 50m. 
+ 
+
+Now I want to save most of the experiments 
+that I had in mind for another video,  
+
+but let’s just do one simple experiment. For 
+this test, we’ll just use the flat wavefront  
+
+exiting the instrument. And what we will try to 
+measure is the difference in shape between the  
+
+2 surfaces of a Zerodur test glass. This test 
+glass has one side which I know is very flat,  
+
+around 1/20th of a wavelength. And this is 
+going to be our reference interface. But the  
+
+other side is somewhat less flat. And what 
+we’ll try to find out is how much that is. 
+ 
+
+The two interfaces are spaced 20 mm apart and 
+both reflect about 4% of the incident light. So  
+
+we can just place the disk in the beam exiting 
+the interferometer, align the position of the  
+
+2 reflections simultaneously and then look at 
+the interference pattern. And this is what it  
+
+looks like. As you can see, we get a nice and 
+clear interference pattern, which by the way is  
+
+extremely stable with no effects of vibrations 
+from the environment. That is because the two  
+
+surfaces are basically mechanically connected 
+to each other by a solid piece of Zerodur.  
+
+Now, the small circular spots are just dust 
+particles in the optical path and these are  
+
+not important for our evaluation. All the 
+information about the difference in shape  
+
+and orientation between the 2 surfaces is 
+contained in the 4 more or less vertical  
+
+fringes. And because we know that 
+one side is almost perfectly flat,  
+
+any curvature in the fringe pattern is the 
+result of non-flatness of the second surface. 
+ 
+
+So, let’s try to evaluate this pattern visually. 
+The most obvious feature is of course the presence  
+
+of the 4 vertical fringes, that indicate that 
+there is a wedge between the 2 interfaces in  
+
+horizontal direction. And we can calculate how 
+large this wedge is, based on the number of  
+
+fringes. It is a little over 4 Lambda wavefront, 
+meaning that there is a wedge half of that between  
+
+the 2 surfaces, so just 2 wavelengths. Why 
+half? Well, that is because in reflection,  
+
+any deviations in surface shape, lead to twice 
+the deviation in the wavefront shape. And so,  
+
+deviations in surface shape are only 
+half of that observed in the wavefront.  
+
+Now, since the wavelength of the laser is 632.8nm 
+and the wedge is 2 lambda between the 2 surface  
+
+this, would mean a gradient in distance of 
+approx. 1.3 microns. But there is a little  
+
+catch in this case. Because we are comparing 2 
+surfaces with Zerodur between them, we should  
+
+actually use the wavelength in this material. 
+Which means that we should divide the wavelength  
+
+in air or vacuum by the refractive index of 
+Zerodur, which is 1.54. So this means that the  
+
+wedge is actually only 840nm. But which side is 
+thicker? It’s hard to tell because as for wedge,  
+
+we would see the same type of interference pattern 
+in either case. So at this point, we don’t know.
+ 
+
+Okay, let’s for a moment focus on the curvature 
+of the fringes now, which indicates a difference  
+
+in the radius between the 2 surfaces. If 
+we look at how much the curvature in the  
+
+fringes deviates from a straight line, we see 
+that it is largest here in the center, and it  
+
+is about 0.4 times the fringe spacing, which 
+translates to 0.4 wavelength of height difference  
+
+between edge and center of the disk. For the 
+surface error, which again is half of that,  
+
+we find 0.2 wavelengths, Now, since we also 
+need to use the wavelength inside Zerodur here,  
+
+this means that the surface curvature is 0.2*times 
+the wavelength divided by the refractive index,  
+
+which results in a value of 82nm. But 
+in which direction is the curve? Is the  
+
+surface under test 82nm concave or convex? As 
+with the direction of the wedge, there is no  
+
+easy way to tell. So now we end up with these 4 
+configurations of which only one can be correct. 
+ 
+
+With a little logic though, you could at this 
+point already discard 2 of these as infeasible.  
+
+But of course, you want to know exactly which 
+configuration of the 4 is correct, right?  
+
+So, if that is indeed the case, figure it out 
+yourself. You just need a 2 more pieces of  
+
+information. Here is the first hint: if I press 
+my finger against the backside of the disk,  
+
+so on the surface under test, we can observe 
+that the interferogram changes due to temperature  
+
+increase of the material by the heat of my finger. 
+Locally, it is only a few degrees Celsius higher,  
+
+but the effect is very noticeable because 
+we are measuring in the nanometer range.  
+
+Now, the second piece of information you need 
+is about the expansion coefficient of the  
+
+material. As you can see from the specifications 
+of Zerodur, it can be either positive or negative.  
+
+But this piece of Zerodur has a positive 
+coefficient of thermal expansion, which  
+
+means it expands with temperature increase. And 
+with these 2 additional pieces of information,  
+
+it is possible tell which of these 4 options 
+is correct. Now, the first person to make  
+
+a comment with the correct answer and 
+course why, owns the pinned comment.
+ 
+
+Okay, so the latter was a very brief explanation 
+of how you can evaluate interferograms visually.  
+
+And, the above example was actually relatively 
+easy. Imagine your interferogram looks something  
+
+like this. Or this. In these cases, it would be 
+quite a bit more challenging to make accurate  
+
+statements about the exact surface shape. This 
+is why in the next video about this subject,  
+
+I have replaced the current analog camera with a 
+high-resolution IP-camera. This allows for very  
+
+detailed evaluation of interferograms using 
+software. And with the help of this software,  
+
+we can measure wedges, angles, surface 
+curvature, and even the effects of warm  
+
+fingers very accurately. Also, we will take a look 
+at how to measure the shape of various optical  
+
+surfaces, and the quality of lens assemblies. So, 
+hopefully I’ll see you in the next video again. 
+
+
+
+---------------------------------------------------------------------------
+
+# [English] Optical Interferometry Part 2_ Measuring Optics with a Zygo GPI LC
+
+Hey everyone,
+Today, I want to demonstrate how the ZYGO
+
+interferometer that I bought a few months
+ago can be used to test optics. In the previous
+
+video, I explained how interferometry works,
+what a wavefront is, and discussed the layout
+
+of the instrument. If you are unfamiliar with
+interferometry and you haven't seen the previous
+
+video, it might be a good idea to watch that
+one first.
+
+This video became quite long, so here is an
+overview of the contents, which allows you
+
+to skip ahead if you don’t want to watch
+everything. First, I'll show how I replaced
+
+the original low-resolution camera of the
+ZYGO with a modern IP camera to record high-resolution
+
+interferograms. And then, we'll take a quick
+look at how we can use the camera in combination
+
+with a software called DFT-fringe to create
+detailed wavefront maps.
+
+The interferometer came with a reference transmission
+sphere, but unfortunately the wavefront documentation
+
+of this item was missing. So, to do meaningful
+measurements with it, we first need to establish
+
+its accuracy by performing a calibration.
+And with that done, we can test some actual
+
+optics: we'll examine the surface properties
+of a high-quality concave wafer scanner mirror
+
+from the 1970s. Then we will take a look at
+the wavefront quality of a vintage Canon F/1.2
+
+lens from the early 1980s. We’ll do the
+same for a modern full-frame Canon EF zoom
+
+lens. And in the last part of the video, I’ll
+show you measurements on the optical properties
+
+of a couple of microscope objectives. All
+in all, there is a lot to cover so let’s
+
+dive right in.
+As shown in the previous video, the interferometer
+
+is a somewhat basic version, that displayed
+low-resolution black and white images on a
+
+monitor for visual evaluation. The instrument
+contained two cameras: one for alignment of
+
+the optics under test and one for displaying
+the interferogram. Both cameras had a rather
+
+limited resolution of 320x240 pixels. Now,
+since this is not 1996 anymore, we can now
+
+do quite a bit better than that.
+For the new camera to record the interferograms,
+
+I wanted to use a housed camera with some
+kind of mount to be able to attach various
+
+types lenses. And if you look at the layout
+of the instrument, there is actually plenty
+
+of space to place such a camera in the instrument
+right here. We just need to redirect the light
+
+in the horizontal direction. So what I did
+was remove the old camera and the lens, and
+
+then made a bracket that can hold a first
+surface mirror under 45-degrees. And this
+
+mirror redirects the vertical beam to a horizontal
+one, which can then be captured by the camera.
+
+I tried different kinds of lenses and eventually
+settled on this compact 25mm c-mount lens
+
+that works for most situations. It is able
+to capture the full field of the interferometer,
+
+while at the same time covering a fairly large
+area of the camera chip. But of course, for
+
+specific measurements, it is possible to use
+other lenses, like lenses with a longer focal
+
+length or a variable zoom lens. And this can
+be very useful if you want to to look at small
+
+details in interferograms. By the way, I left
+the original alignment camera where it was,
+
+because it still works fine and you actually
+don’t need a lot of resolution to do the
+
+alignment. So the original monitor is still
+used in the setup, but only during alignment
+
+procedures.
+For powering the IP camera, I connected it
+
+to the 12V power supply already present in
+the instrument. And after that, there was
+
+just one more thing left to do and that was
+bringing the camera's UTP connection to the
+
+housing of the instrument. For this purpose,
+I used a two-sided UTP female connector. One
+
+side connects to the camera, and the other
+side connects to the PC. And with that, the
+
+conversion is complete.
+Now, I used an IDS ethernet camera for the
+
+conversion, but in fact any camera will do
+as long as it can be accessed from a computer,
+
+and the images can be stored to disk. So,
+to capture the data what I do is align the
+
+optic to be measured such that a clear interferogram
+is visible with well-defined fringes. It helps
+
+if the camera software has a feature to monitor
+the maximum fringe intensity so that we can
+
+adjust it to within the linear dynamic range
+of the camera. Then I collect a number of
+
+interferograms with somewhat different fringe
+angles and spacings. And these can then serve
+
+as a basis for a wavefront analysis.
+For the actual wavefront calculations, we'll
+
+used a free software called DFTfringe. It’s
+programmed by Dale Eason, who took it upon
+
+himself to make advanced interferometry accessible
+to the masses. It is designed with amateur
+
+telescope making in mind, but as will become
+clear, its application range is quite a bit
+
+broader than that. I won't delve into all
+the functionality of the software. Instead,
+
+I'll just very quickly walk you through the
+process of evaluating interferograms and averaging
+
+wavefront data.
+So here is the start screen of DFT fringe.
+
+Before it can evaluate the interferograms
+correctly, the program requires the input
+
+of a few settings, like what wavelength is
+used, and what the fringe spacing in the interferogram
+
+actually represents. In some configurations,
+each fringe represents 1 wavelength of phase
+
+shift. But in others, like in autocollimation,
+this value actually needs to be set to 0.5.
+
+And when all the parameters are set, we are
+basically ready to go.
+
+The software gets us to our results in a few
+steps. You start by importing a recorded interferogram
+
+and define the areas you wish to include or
+exclude in the wavefront evaluation. If that
+
+is done, the software performs a 2D Fourier
+transform on the selected area and allows
+
+us to do a bit of low-frequency spatial filtering.
+This filtering can for example remove low
+
+spatial frequencies that are result of the
+global intensity variations due to uneven
+
+illumination over the full surface. And after
+setting the low-frequency spatial filter,
+
+the image is resampled to a specific size
+and from this, the software calculates the
+
+wavefront data.
+When the software calculates the wavefront,
+
+it also fits the data to a specific set of
+known aberrations. And this feature allows
+
+for removing specific aberrations from your
+analysis. For instance, tilt is generally
+
+not an aberration of interest because it describes
+the orientation between the reference and
+
+the wavefront under test. And so it has nothing
+to do with the shape of either surface. Now,
+
+DFT-fringe allows you to either include or
+exclude it from your analysis. You can customize
+
+the presentation of the results and the scale.
+For example you can convert wavefront errors
+
+to surface shape errors and choose to present
+them in nanometers instead of waves. All in
+
+all, this is a very useful tool for interferometric
+fringe analysis and on top of that it can
+
+be downloaded for free.
+In all upcoming experiments I will use this
+
+F/0.75 transmission sphere as a reference.
+And as I mentioned in the introduction, we
+
+don’t know anything about its accuracy of
+shape. So, before we can measure any meaningful
+
+results with it, we need to measure the accuracy
+of the reference sphere first. But how do
+
+we do that? We could of course calibrate the
+surface of the transmission sphere by comparing
+
+its shape to a more precise reference surface.
+But instead, I want to show you another method,
+
+known as the “random ball” method.
+The method requires the use of a small smooth
+
+ball with a reflective surface. The surface
+of the ball doesn't need to be perfectly spherical,
+
+but I guess it helps if it is quite close-to-spherical.
+Now the only thing we need to do for the experiment
+
+is to measure the surface shape of the ball
+at many random positions with the reference
+
+sphere and then average these measurements.
+The reason that this works is that, if you
+
+collect a lot of samples from a ball surface
+even if it’s far from perfect, all the errors
+
+in individual parts of the surface will eventually
+average out, and the average will iterate
+
+to the surface equivalent of a perfect sphere.
+And when you get to that point, the only error
+
+that remains is the surface error in the reference
+sphere because it is systematically present
+
+in all the individual measurements.
+You can buy these special high-accuracy SiC
+
+balls for this purpose and these are pretty
+expensive. However, there is a much cheaper
+
+way: I just used a precision aluminum oxide
+bearing ball that typically costs less than
+
+25 euros online. The largest balls generally
+have a diameter of around 10mm and have a
+
+variation in the diameter of about 1 micron.
+So they're not incredibly precise, but as
+
+you will see, precise enough for this experiment.
+To hold the ball, I made a stand from 3 quarter-inch
+
+bearing balls, glued on top of an aluminum
+rod using epoxy. And now we have a calibration
+
+setup ready for less than 30 Euros.
+The calibration procedure itself involves
+
+placing this ball at the center of the radius
+of curvature of the transmission sphere in
+
+some random orientation. We record an interferogram,
+then choose a different (random) area on the
+
+ball, record another one and so on.
+Here is what evaluating the results looks
+
+like in practice: what you observe is that
+in the individual measurements, the surface
+
+error is generally larger than ¼ of a lambda
+and is all over the place. And this is due
+
+to the errors present in the shape of the
+ball. But look what happens when we start
+
+averaging these measurements: After 10 measurements,
+the error has basically dropped down to 1/10th
+
+of a lambda P-V. And by adding more and more
+measurement to the average, we can gradually
+
+bring this down even further. Until after
+evaluating about 50 interferograms, we do
+
+not see improvement any more in the result.
+And at that point we know that the error that
+
+remains is basically the error in the transmission
+sphere reference.
+
+If we look at the accuracy of shape in the
+spherical reference, it is about 1/20 of a
+
+wavelength peak to valley. And we will consider
+this to be the wavefront accuracy over the
+
+full area of the transmission sphere. Now
+in all the upcoming tests, we will only use
+
+a small fraction of this reference surface,
+which will make the accuracy of the tests
+
+quite a bit higher than the 1/20th of a lambda.
+DFTfringe presents the value of the Strehl
+
+ratio quite prominently. And I actually discussed
+Strehl ratio in another video. Now I must
+
+admit, Strehl ratio is not the most common
+parameter used in the specification of the
+
+optical quality of lenses. But for specifying
+wavefront performance close to the diffraction
+
+limit, I think it is a very useful parameter.
+What it describes is basically just the ratio
+
+between where wave energy actually ends up
+in an image, compared to where it should have
+
+ended up if the optic were perfect. So here
+is a graph of an intensity profile of an imperfect
+
+optic and of a perfect optic. To calculate
+the Strehl we take the area that is under
+
+both curves and name this B, and then divide
+this by the area under the perfect curve,
+
+so area A. This represents the fraction of
+the light energy that goes to where it should
+
+have gone in an image.
+Since Strehl ratio is a fraction, its value
+
+is between 0 and 1. And a value of 1 only
+applies to an optic that performs at the theoretical
+
+limit. Now, roughly speaking, an optic with
+a Strehl ratio value above 0.83 is considered
+
+to be “diffraction limited” What this
+doesn’t mean is that the optic is performing
+
+perfectly in this region. It just means that
+the dominant factor for reduced sharpness
+
+is because of diffraction, for example because
+of a limited aperture. And to a lesser degree
+
+it is due to the imperfections in things like
+surface shape. So, in a sense the value of
+
+0.83 is similar to stating that ¼ lambda
+Peak to valley wavefront error is “diffraction
+
+limited”. Because both these values are
+kind of arbitrary definitions of what is meant
+
+by “diffraction limited”.
+So our reference surface turns out to be very
+
+accurate, as we can conclude from both the
+Strehl value as well as from the PV wavefront
+
+error. But of course, that is kind of essential
+if you want to use it to measure optical quality
+
+of other objects in the high-end of the range.
+The first thing we are going to measure is
+
+the surface shape of this spherical Zerodur
+mirror. It’s about 250mm in diameter and
+
+has a radius of curvature of 350mm. I bought
+the mirror about 10 years ago on eBay for
+
+around 100 Euros. The reflective coating was
+in pretty bad shape, so I removed it. But
+
+the remaining surface reflectivity is 4%,
+which is ideal in this test setup. The mirror
+
+itself is from a 1970s Perkin-Elmer wafer
+scanner system. This was the first commercial
+
+photolithographic system that used non-contact
+exposure of silicon wafers. So given its original
+
+application, you’d expect this mirror to
+be quite accurate.
+
+The way we measure this mirror is with the
+focus of the reference element in the center
+
+of the radius of curvature of the mirror.
+So, the tightly focused light beam from the
+
+interferometer expands and reflects off the
+mirror surface. It then returns along approximately
+
+the same path and is recombined with the spherical
+reference wavefront that reflects of the reference
+
+element. And any deviations from spherical
+in the mirror surface will cause phase shifts
+
+between the light reflecting off the mirror
+surface and the spherical reference. And this
+
+can then be observed as interference.
+Here are a few typical interferograms that
+
+were measured with this mirror under a slight
+tilt. Even though the mirror is strongly curved,
+
+you can observe that in the measurements,
+it only covers about half the diameter of
+
+the total measurement area available. And
+this makes our accuracy of measurement much
+
+higher than 1/20th of a wavelength.
+So from the interferograms just collected,
+
+the wavefront differences between the mirror
+surface and that of the reference element
+
+is calculated in DFTfringe. you can see that
+the peak to valley accuracy of this mirror
+
+itself is around 1/10th of a wavelength. In
+terms of surface shape accuracy, this means
+
+that the mirror never deviates more than around
+30nm of that of a perfect sphere. Anyway,
+
+being able to measure with this level of precision
+is actually pretty cool and it gave me confidence
+
+that the instrument performs as expected.
+By the way, if you have ever tried to make
+
+a telescope mirror by hand yourself, you might
+observe something familiar in the wavefron
+
+plot: the mirror has a slightly turned down
+edge, although very small, around 15nm or
+
+so.
+Next on the list of items to test is this
+
+Canon FD 55mm F/1.2 lens. This is a rather
+famous vintage lens in the sense that it was
+
+actually the first consumer lens containing
+an aspherical element. With its F/1.2 aperture,
+
+it’s very light sensitive and therefore
+well suited for indoor photography without
+
+using a flash. The earliest versions of this
+lens introduced in 1971, contained radioactive
+
+Thorium Oxide, but this one, which was bought
+by my father in march 1980, does not contain
+
+Thorium. Therefore, it also does not display
+the characteristic radiation browning observed
+
+in radioactive lenses. On top of that it has
+lived in a box most of its life so it’s
+
+in nearly pristine condition.
+For testing the wavefront deformation in this
+
+lens, we utilize a configuration called autocollimation,
+which is schematically depicted here. Because
+
+the light passes through the lens twice in
+this test, many aberrations are measured to
+
+be twice as large as they would be with a
+single pass. So when this configuration is
+
+used, it requires us to interpret the fringe
+spacing as equivalent with only 0.5 wavelength
+
+instead of 1 wavelength.
+Before I show you the result of the measurement,
+
+I should mention that doing a wavefront measurement
+on a lens is not in any way representative
+
+for overall lens performance. Basically, we
+are testing with only one particular wavelength
+
+of light on the optical axis with the focus
+setting to infinity. So, factors like chromatic
+
+aberrations, off-axis performance in the image
+field and the at proximity are not included
+
+in this test. I've actually made a video on
+how to quantitatively measure all these aspects
+
+using another method and obtain a more holistic
+performance. But even with all the limitations,
+
+I think it is worthwhile to take a look at
+the wavefront error that this lens introduces.
+
+So here is the wavefront error of the lens
+at its full aperture and as you can see, it’s
+
+is actually pretty large. The total P-V wavefront
+error is more than 3 lambda and the most apparent
+
+errors are spherical aberration and some astigmatisms.
+The Strehl ratio is quite disappointing as
+
+well. As a consequence, this lens can never
+provide high sharpness images at the maximum
+
+aperture. Now, it’s interesting to see what
+happens if we limit the aperture of this lens
+
+to let’s say to F/4.0. By doing that, we
+will lose a lot of light, about 90%. But this
+
+also limits the wavefront error to the one
+present in this central part here. So, if
+
+we do the same wavefront analysis at F/4,
+suddenly the lens performs diffraction limited.
+
+Because reducing aperture to F/4 eliminates
+almost all of the spherical error and the
+
+astigmatism which is present in the wavefront
+at full aperture.
+
+Here is a comparison of the text on a permanent
+marker shot with F/1.2 and F/4 on an aps-c
+
+sensor. It’s clear that the 3-lambda wavefront
+error is influencing the sharpness and contrast
+
+pretty badly. So, I guess the only way to
+use this lens effectively is to always set
+
+it to a smaller aperture whenever there is
+sufficient light available, otherwise you’ll
+
+end up with very soft images.
+The Canon EF 24 to 105mm full frame zoom lens
+
+is next on our list. I just want to take a
+very brief look at it, mainly because I sometimes
+
+use it for my YouTube videos. With its maximum
+aperture of F/4 over the whole zoom range
+
+it is not particularly photon hungry. But
+it always produces excellent image sharpness,
+
+which made me curious about how small the
+wavefront errors in a high-quality lens are.
+
+It was measured in the same way as the F/1.2
+lens, so in autocollimation. And here are
+
+the wavefront errors at focal length settings
+of 24mm, 50mm and 105mm. The largest wavefront
+
+errors are found at 105mm focal distance,
+where the Strehl ratio has dropped to 0.6.
+
+Which by the way is still a very decent value.
+In the center of the range, its performance
+
+is basically diffraction limited. So concluding:
+this lens performs well in the full zoom range.
+
+That is of course, within all the limitations
+of the current testing method.
+
+If you made it this far into the video you
+are probably more than averagely interested
+
+in optics. So, for this last part I thought
+I’d present measurements that I did on microscope
+
+objectives. All objectives presented here
+are all so called “infinity corrected”
+
+objectives. This means that they are designed
+to work in combination with a so-called tube
+
+lens rather than create an image directly
+like is the case with a proximity-corrected
+
+objectives. Since infinity corrected objectives
+basically project their image at infinity,
+
+this allows us to correctly use the autocollimation
+configuration for testing.
+
+Unlike camera lenses, microscope objectives
+aren't specified by focal length and maximum
+
+focal distance to aperture ratio. Instead,
+they are characterized by magnification and
+
+numerical aperture. I’ll very briefly discuss
+these two aspects first.
+
+Magnification describes the ratio between
+the object size and image size that a particular
+
+microscope objective is designed for. You
+can of course try to use it at a different
+
+magnification by changing both the lens-object
+distance and the lens-image distance. But
+
+if you do that, it will not perform optimally.
+And this is important because microscope optics
+
+is required to work close to the theoretical
+best performance. So in this sense, a microscope
+
+objective is a bit different from a camera
+lens, which is basically designed to give
+
+you acceptable image quality over a wide range
+of object to lens distances.
+
+Now, specifying a high magnification is only
+useful if the sharpness in the image keeps
+
+up with the magnification that is specified.
+And that is why the Magnification and Numerical
+
+Aperture of objectives are related, because
+Numerical Aperture is a key parameter for
+
+resolving small features.
+By definition, the NA is equal to the refractive
+
+index of the medium that contains the object,
+times the SIN() of the maximum angle theta
+
+at which light originating from the object
+can be captured. This means that NA increases
+
+with the refractive index of the medium and
+with the value of theta. Now, since all the
+
+objectives I will discuss today are intended
+for use in air and not in water- or oil, we
+
+can simplify things because the refractive
+index of air is 1. So for now we can just
+
+ignore the refractive index which means that
+NA in all cases discussed here is just equal
+
+to the sin() of theta.
+The exact reason why NA is the key parameter
+
+for achieving a high sharpness is quite fascinating.
+But it is kind of a rabbit hole, which I don’t
+
+want to dive into now. Today I will just show
+you the formula. So, the size of the smallest
+
+features that can theoretically be resolved
+by a microscope objective are proportional
+
+to a constant, times the wavelength of light,
+divided by the numerical aperture. This means
+
+that it is possible to resolve smaller features
+by either using a shorter wavelength of light,
+
+or use a higher NA.
+This relationship explains why magnification
+
+and numerical aperture are so closely related
+in the specification of microscope objectives.
+
+Because attempting to pair a high magnification
+with a low numerical aperture is pretty useless:
+
+it will just result in a magnified image of
+poor sharpness.
+
+Let’s have a look at the measurements on
+this Nikon 10x objective with a N.A. of 0.3.
+
+Here is an image of the wavefront error of
+this objective and it shows us that the errors
+
+are in fact very small. The wavefront is accurate
+within seven hundredths of a wavelength for
+
+the entire aperture, the Strehl is 0.99, so
+this is looking great. The major contribution
+
+in the surface error is actually a very slight
+spherical aberration, but all in all, this
+
+is really a top-quality piece.
+Now, let's examine a different objective,
+
+like this 20x Leica Fluotar with a NA of 0.5,
+and do the same wavefront measurement. Interestingly,
+
+the spherical aberration in this objective
+is noticably more pronounced. Both the total
+
+peak-valley error as well as the Strehl ratio
+is only just on the good side of the diffraction
+
+limit. Now, it might be tempting to conclude
+that this objective is not as good as the
+
+previous one, but that's not the case. The
+reason behind the spherical aberration is
+
+in this particular number that can be found
+on the objective. The number represents the
+
+optimum cover slip thickness in millimeters
+for this objective.
+
+So, what the manufacturer assumes is that
+you are going to use a glass cover slip when
+
+you use your microscope and it therefore it
+has already compensated the optical properties
+
+for a specific glass thickness. Now, you might:
+think huh 0.17mm of glass thickness, how is
+
+that ever going to influence the focus? And
+indeed, with low numerical aperture optics
+
+there will generally not be a problem. However,
+with increasing NA, even a glass plate this
+
+thin can introduce a significant spherical
+aberration. This is illustrated in this ray
+
+tracing figure for a 0.7 NA. In a perfect
+optic, all rays will end in a single point.
+
+But add a cover glass and suddenly the area
+where the rays end up has significant size.
+
+Now of course the previous wavefront measurement
+was done without a cover slip. So, the question
+
+is what happens if we add a cover slip in
+the light path? I quickly tried this with
+
+a glass thickness of 0.16mm, so close to the
+optimum value and it resulted in this measurement:
+
+it reduced the spherical aberration quite
+a bit. And so, this is something to realize
+
+when you use a high-NA objectives: that it
+can only perform at its peak performance when
+
+used in combination with the cover slip thickness
+specified.
+
+So a few years ago, I bought this unmarked
+NIKON 20x Plan APO OEM objective for use in
+
+my maskless wafer stepper. These Nikon objectives
+can be purchased on eBay for around 100 dollars
+
+apiece and are widely available. It was in
+perfect shape when it got here but when I
+
+started using it, something was a bit off,
+dependent on how I used it exactly. Now, when
+
+I published the video on the maskless wafer
+stepper, people at a forum called photomicrography.net
+
+made me aware of the fact that these particular
+types of objectives aren't optically the same
+
+as the corresponding standard Nikon microscope
+objectives; they are actually modified versions
+
+that are designed for a different cover slip
+thickness. The forum thread on this subject
+
+mentioned that these perform better when used
+in combination with 2 or 3 cover slips. And
+
+since I now have an interferometer available
+let’s see if we can narrow this value down
+
+a bit further.
+Here is the spherical aberration of the objective
+
+without a cover slip. The wavefront error
+is 1 lambda, so without a correction, it will
+
+certainly perform very poorly. Here I summarized
+the individual wavefront measurements for
+
+0, 1, 2, 3 and 4 cover slips. I think the
+effect of adding more glass is pretty clear.
+
+You can see that the wavefront error sort
+of flips over between 2 and 3 cover slips
+
+of glass thickness.
+What we can do now is take for example the
+
+peak to valley spherical aberration from these
+measurements and plot the values as a function
+
+of the total glass thickness in a graph. And
+by fitting a line through these data, we find
+
+that a minimum aberration is at around 0.42-0.43mm.
+And this thickness is right between 2 and
+
+3 cover slips, like it was stated on the forum.
+Here is a similar graph that I made for the
+
+maximum Strehl ratio, which yields exactly
+the same outcome. So, if we were to add a
+
+0.42 mm glass sheet when using it, we can
+effectively get rid of the huge spherical
+
+aberration completely and use this objective
+at its maximum performance level again.
+
+Okay, we’ve finally come to the end of the
+video. I hope I gave you some ideas of how
+
+interferometry can be used for optical testing.
+Thanks for watching.

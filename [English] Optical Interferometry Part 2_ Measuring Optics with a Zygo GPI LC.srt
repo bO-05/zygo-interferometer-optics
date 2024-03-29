@@ -1,0 +1,1500 @@
+1
+00:00:00,919 --> 00:00:04,430
+Hey everyone,
+Today, I want to demonstrate how the ZYGO
+
+2
+00:00:04,430 --> 00:00:10,050
+interferometer that I bought a few months
+ago can be used to test optics. In the previous
+
+3
+00:00:10,050 --> 00:00:15,320
+video, I explained how interferometry works,
+what a wavefront is, and discussed the layout
+
+4
+00:00:15,320 --> 00:00:19,970
+of the instrument. If you are unfamiliar with
+interferometry and you haven't seen the previous
+
+5
+00:00:19,970 --> 00:00:24,980
+video, it might be a good idea to watch that
+one first.
+
+6
+00:00:24,980 --> 00:00:29,539
+This video became quite long, so here is an
+overview of the contents, which allows you
+
+7
+00:00:29,539 --> 00:00:34,210
+to skip ahead if you don’t want to watch
+everything. First, I'll show how I replaced
+
+8
+00:00:34,210 --> 00:00:40,820
+the original low-resolution camera of the
+ZYGO with a modern IP camera to record high-resolution
+
+9
+00:00:40,820 --> 00:00:45,170
+interferograms. And then, we'll take a quick
+look at how we can use the camera in combination
+
+10
+00:00:45,170 --> 00:00:51,010
+with a software called DFT-fringe to create
+detailed wavefront maps.
+
+11
+00:00:51,010 --> 00:00:56,570
+The interferometer came with a reference transmission
+sphere, but unfortunately the wavefront documentation
+
+12
+00:00:56,570 --> 00:01:01,480
+of this item was missing. So, to do meaningful
+measurements with it, we first need to establish
+
+13
+00:01:01,480 --> 00:01:06,970
+its accuracy by performing a calibration.
+And with that done, we can test some actual
+
+14
+00:01:06,970 --> 00:01:12,580
+optics: we'll examine the surface properties
+of a high-quality concave wafer scanner mirror
+
+15
+00:01:12,580 --> 00:01:18,280
+from the 1970s. Then we will take a look at
+the wavefront quality of a vintage Canon F/1.2
+
+16
+00:01:18,280 --> 00:01:23,570
+lens from the early 1980s. We’ll do the
+same for a modern full-frame Canon EF zoom
+
+17
+00:01:23,570 --> 00:01:29,000
+lens. And in the last part of the video, I’ll
+show you measurements on the optical properties
+
+18
+00:01:29,000 --> 00:01:34,040
+of a couple of microscope objectives. All
+in all, there is a lot to cover so let’s
+
+19
+00:01:34,040 --> 00:01:38,810
+dive right in.
+As shown in the previous video, the interferometer
+
+20
+00:01:38,810 --> 00:01:44,479
+is a somewhat basic version, that displayed
+low-resolution black and white images on a
+
+21
+00:01:44,479 --> 00:01:49,509
+monitor for visual evaluation. The instrument
+contained two cameras: one for alignment of
+
+22
+00:01:49,509 --> 00:01:54,750
+the optics under test and one for displaying
+the interferogram. Both cameras had a rather
+
+23
+00:01:54,750 --> 00:02:02,509
+limited resolution of 320x240 pixels. Now,
+since this is not 1996 anymore, we can now
+
+24
+00:02:02,509 --> 00:02:07,979
+do quite a bit better than that.
+For the new camera to record the interferograms,
+
+25
+00:02:07,979 --> 00:02:12,500
+I wanted to use a housed camera with some
+kind of mount to be able to attach various
+
+26
+00:02:12,500 --> 00:02:17,019
+types lenses. And if you look at the layout
+of the instrument, there is actually plenty
+
+27
+00:02:17,019 --> 00:02:22,940
+of space to place such a camera in the instrument
+right here. We just need to redirect the light
+
+28
+00:02:22,940 --> 00:02:28,050
+in the horizontal direction. So what I did
+was remove the old camera and the lens, and
+
+29
+00:02:28,050 --> 00:02:32,670
+then made a bracket that can hold a first
+surface mirror under 45-degrees. And this
+
+30
+00:02:32,670 --> 00:02:38,450
+mirror redirects the vertical beam to a horizontal
+one, which can then be captured by the camera.
+
+31
+00:02:38,450 --> 00:02:44,680
+I tried different kinds of lenses and eventually
+settled on this compact 25mm c-mount lens
+
+32
+00:02:44,680 --> 00:02:49,970
+that works for most situations. It is able
+to capture the full field of the interferometer,
+
+33
+00:02:49,970 --> 00:02:54,730
+while at the same time covering a fairly large
+area of the camera chip. But of course, for
+
+34
+00:02:54,730 --> 00:02:59,480
+specific measurements, it is possible to use
+other lenses, like lenses with a longer focal
+
+35
+00:02:59,480 --> 00:03:04,700
+length or a variable zoom lens. And this can
+be very useful if you want to to look at small
+
+36
+00:03:04,700 --> 00:03:10,349
+details in interferograms. By the way, I left
+the original alignment camera where it was,
+
+37
+00:03:10,349 --> 00:03:14,610
+because it still works fine and you actually
+don’t need a lot of resolution to do the
+
+38
+00:03:14,610 --> 00:03:20,330
+alignment. So the original monitor is still
+used in the setup, but only during alignment
+
+39
+00:03:20,330 --> 00:03:24,670
+procedures.
+For powering the IP camera, I connected it
+
+40
+00:03:24,670 --> 00:03:29,340
+to the 12V power supply already present in
+the instrument. And after that, there was
+
+41
+00:03:29,340 --> 00:03:33,250
+just one more thing left to do and that was
+bringing the camera's UTP connection to the
+
+42
+00:03:33,250 --> 00:03:38,951
+housing of the instrument. For this purpose,
+I used a two-sided UTP female connector. One
+
+43
+00:03:38,951 --> 00:03:43,110
+side connects to the camera, and the other
+side connects to the PC. And with that, the
+
+44
+00:03:43,110 --> 00:03:49,420
+conversion is complete.
+Now, I used an IDS ethernet camera for the
+
+45
+00:03:49,420 --> 00:03:54,170
+conversion, but in fact any camera will do
+as long as it can be accessed from a computer,
+
+46
+00:03:54,170 --> 00:03:59,220
+and the images can be stored to disk. So,
+to capture the data what I do is align the
+
+47
+00:03:59,220 --> 00:04:04,580
+optic to be measured such that a clear interferogram
+is visible with well-defined fringes. It helps
+
+48
+00:04:04,580 --> 00:04:09,810
+if the camera software has a feature to monitor
+the maximum fringe intensity so that we can
+
+49
+00:04:09,810 --> 00:04:14,470
+adjust it to within the linear dynamic range
+of the camera. Then I collect a number of
+
+50
+00:04:14,470 --> 00:04:19,190
+interferograms with somewhat different fringe
+angles and spacings. And these can then serve
+
+51
+00:04:19,190 --> 00:04:25,530
+as a basis for a wavefront analysis.
+For the actual wavefront calculations, we'll
+
+52
+00:04:25,530 --> 00:04:31,150
+used a free software called DFTfringe. It’s
+programmed by Dale Eason, who took it upon
+
+53
+00:04:31,150 --> 00:04:37,810
+himself to make advanced interferometry accessible
+to the masses. It is designed with amateur
+
+54
+00:04:37,810 --> 00:04:42,440
+telescope making in mind, but as will become
+clear, its application range is quite a bit
+
+55
+00:04:42,440 --> 00:04:46,600
+broader than that. I won't delve into all
+the functionality of the software. Instead,
+
+56
+00:04:46,600 --> 00:04:51,830
+I'll just very quickly walk you through the
+process of evaluating interferograms and averaging
+
+57
+00:04:51,830 --> 00:04:57,040
+wavefront data.
+So here is the start screen of DFT fringe.
+
+58
+00:04:57,040 --> 00:05:01,520
+Before it can evaluate the interferograms
+correctly, the program requires the input
+
+59
+00:05:01,520 --> 00:05:07,199
+of a few settings, like what wavelength is
+used, and what the fringe spacing in the interferogram
+
+60
+00:05:07,199 --> 00:05:13,139
+actually represents. In some configurations,
+each fringe represents 1 wavelength of phase
+
+61
+00:05:13,139 --> 00:05:19,360
+shift. But in others, like in autocollimation,
+this value actually needs to be set to 0.5.
+
+62
+00:05:19,360 --> 00:05:24,479
+And when all the parameters are set, we are
+basically ready to go.
+
+63
+00:05:24,479 --> 00:05:31,330
+The software gets us to our results in a few
+steps. You start by importing a recorded interferogram
+
+64
+00:05:31,330 --> 00:05:38,940
+and define the areas you wish to include or
+exclude in the wavefront evaluation. If that
+
+65
+00:05:38,940 --> 00:05:43,930
+is done, the software performs a 2D Fourier
+transform on the selected area and allows
+
+66
+00:05:43,930 --> 00:05:49,400
+us to do a bit of low-frequency spatial filtering.
+This filtering can for example remove low
+
+67
+00:05:49,400 --> 00:05:55,370
+spatial frequencies that are result of the
+global intensity variations due to uneven
+
+68
+00:05:55,370 --> 00:06:00,870
+illumination over the full surface. And after
+setting the low-frequency spatial filter,
+
+69
+00:06:00,870 --> 00:06:06,120
+the image is resampled to a specific size
+and from this, the software calculates the
+
+70
+00:06:06,120 --> 00:06:10,730
+wavefront data.
+When the software calculates the wavefront,
+
+71
+00:06:10,730 --> 00:06:15,790
+it also fits the data to a specific set of
+known aberrations. And this feature allows
+
+72
+00:06:15,790 --> 00:06:21,060
+for removing specific aberrations from your
+analysis. For instance, tilt is generally
+
+73
+00:06:21,060 --> 00:06:26,039
+not an aberration of interest because it describes
+the orientation between the reference and
+
+74
+00:06:26,039 --> 00:06:31,340
+the wavefront under test. And so it has nothing
+to do with the shape of either surface. Now,
+
+75
+00:06:31,340 --> 00:06:37,360
+DFT-fringe allows you to either include or
+exclude it from your analysis. You can customize
+
+76
+00:06:37,360 --> 00:06:43,319
+the presentation of the results and the scale.
+For example you can convert wavefront errors
+
+77
+00:06:43,319 --> 00:06:48,710
+to surface shape errors and choose to present
+them in nanometers instead of waves. All in
+
+78
+00:06:48,710 --> 00:06:54,530
+all, this is a very useful tool for interferometric
+fringe analysis and on top of that it can
+
+79
+00:06:54,530 --> 00:07:01,199
+be downloaded for free.
+In all upcoming experiments I will use this
+
+80
+00:07:01,199 --> 00:07:06,191
+F/0.75 transmission sphere as a reference.
+And as I mentioned in the introduction, we
+
+81
+00:07:06,191 --> 00:07:10,970
+don’t know anything about its accuracy of
+shape. So, before we can measure any meaningful
+
+82
+00:07:10,970 --> 00:07:16,180
+results with it, we need to measure the accuracy
+of the reference sphere first. But how do
+
+83
+00:07:16,180 --> 00:07:21,120
+we do that? We could of course calibrate the
+surface of the transmission sphere by comparing
+
+84
+00:07:21,120 --> 00:07:27,000
+its shape to a more precise reference surface.
+But instead, I want to show you another method,
+
+85
+00:07:27,000 --> 00:07:33,020
+known as the “random ball” method.
+The method requires the use of a small smooth
+
+86
+00:07:33,020 --> 00:07:38,530
+ball with a reflective surface. The surface
+of the ball doesn't need to be perfectly spherical,
+
+87
+00:07:38,530 --> 00:07:43,620
+but I guess it helps if it is quite close-to-spherical.
+Now the only thing we need to do for the experiment
+
+88
+00:07:43,620 --> 00:07:48,060
+is to measure the surface shape of the ball
+at many random positions with the reference
+
+89
+00:07:48,060 --> 00:07:52,210
+sphere and then average these measurements.
+The reason that this works is that, if you
+
+90
+00:07:52,210 --> 00:07:58,159
+collect a lot of samples from a ball surface
+even if it’s far from perfect, all the errors
+
+91
+00:07:58,159 --> 00:08:03,210
+in individual parts of the surface will eventually
+average out, and the average will iterate
+
+92
+00:08:03,210 --> 00:08:09,220
+to the surface equivalent of a perfect sphere.
+And when you get to that point, the only error
+
+93
+00:08:09,220 --> 00:08:14,539
+that remains is the surface error in the reference
+sphere because it is systematically present
+
+94
+00:08:14,539 --> 00:08:21,670
+in all the individual measurements.
+You can buy these special high-accuracy SiC
+
+95
+00:08:21,670 --> 00:08:26,400
+balls for this purpose and these are pretty
+expensive. However, there is a much cheaper
+
+96
+00:08:26,400 --> 00:08:31,190
+way: I just used a precision aluminum oxide
+bearing ball that typically costs less than
+
+97
+00:08:31,190 --> 00:08:37,630
+25 euros online. The largest balls generally
+have a diameter of around 10mm and have a
+
+98
+00:08:37,630 --> 00:08:43,460
+variation in the diameter of about 1 micron.
+So they're not incredibly precise, but as
+
+99
+00:08:43,460 --> 00:08:49,640
+you will see, precise enough for this experiment.
+To hold the ball, I made a stand from 3 quarter-inch
+
+100
+00:08:49,640 --> 00:08:55,420
+bearing balls, glued on top of an aluminum
+rod using epoxy. And now we have a calibration
+
+101
+00:08:55,420 --> 00:09:01,300
+setup ready for less than 30 Euros.
+The calibration procedure itself involves
+
+102
+00:09:01,300 --> 00:09:06,120
+placing this ball at the center of the radius
+of curvature of the transmission sphere in
+
+103
+00:09:06,120 --> 00:09:11,870
+some random orientation. We record an interferogram,
+then choose a different (random) area on the
+
+104
+00:09:11,870 --> 00:09:17,320
+ball, record another one and so on.
+Here is what evaluating the results looks
+
+105
+00:09:17,320 --> 00:09:22,390
+like in practice: what you observe is that
+in the individual measurements, the surface
+
+106
+00:09:22,390 --> 00:09:27,740
+error is generally larger than ¼ of a lambda
+and is all over the place. And this is due
+
+107
+00:09:27,740 --> 00:09:32,690
+to the errors present in the shape of the
+ball. But look what happens when we start
+
+108
+00:09:32,690 --> 00:09:37,860
+averaging these measurements: After 10 measurements,
+the error has basically dropped down to 1/10th
+
+109
+00:09:37,860 --> 00:09:43,500
+of a lambda P-V. And by adding more and more
+measurement to the average, we can gradually
+
+110
+00:09:43,500 --> 00:09:49,750
+bring this down even further. Until after
+evaluating about 50 interferograms, we do
+
+111
+00:09:49,750 --> 00:09:54,500
+not see improvement any more in the result.
+And at that point we know that the error that
+
+112
+00:09:54,500 --> 00:10:00,130
+remains is basically the error in the transmission
+sphere reference.
+
+113
+00:10:00,130 --> 00:10:04,640
+If we look at the accuracy of shape in the
+spherical reference, it is about 1/20 of a
+
+114
+00:10:04,640 --> 00:10:09,630
+wavelength peak to valley. And we will consider
+this to be the wavefront accuracy over the
+
+115
+00:10:09,630 --> 00:10:14,870
+full area of the transmission sphere. Now
+in all the upcoming tests, we will only use
+
+116
+00:10:14,870 --> 00:10:19,470
+a small fraction of this reference surface,
+which will make the accuracy of the tests
+
+117
+00:10:19,470 --> 00:10:26,890
+quite a bit higher than the 1/20th of a lambda.
+DFTfringe presents the value of the Strehl
+
+118
+00:10:26,890 --> 00:10:33,630
+ratio quite prominently. And I actually discussed
+Strehl ratio in another video. Now I must
+
+119
+00:10:33,630 --> 00:10:38,860
+admit, Strehl ratio is not the most common
+parameter used in the specification of the
+
+120
+00:10:38,860 --> 00:10:44,820
+optical quality of lenses. But for specifying
+wavefront performance close to the diffraction
+
+121
+00:10:44,820 --> 00:10:49,750
+limit, I think it is a very useful parameter.
+What it describes is basically just the ratio
+
+122
+00:10:49,750 --> 00:10:54,839
+between where wave energy actually ends up
+in an image, compared to where it should have
+
+123
+00:10:54,839 --> 00:11:01,389
+ended up if the optic were perfect. So here
+is a graph of an intensity profile of an imperfect
+
+124
+00:11:01,389 --> 00:11:06,930
+optic and of a perfect optic. To calculate
+the Strehl we take the area that is under
+
+125
+00:11:06,930 --> 00:11:13,220
+both curves and name this B, and then divide
+this by the area under the perfect curve,
+
+126
+00:11:13,220 --> 00:11:19,399
+so area A. This represents the fraction of
+the light energy that goes to where it should
+
+127
+00:11:19,399 --> 00:11:25,670
+have gone in an image.
+Since Strehl ratio is a fraction, its value
+
+128
+00:11:25,670 --> 00:11:31,709
+is between 0 and 1. And a value of 1 only
+applies to an optic that performs at the theoretical
+
+129
+00:11:31,709 --> 00:11:37,339
+limit. Now, roughly speaking, an optic with
+a Strehl ratio value above 0.83 is considered
+
+130
+00:11:37,339 --> 00:11:42,579
+to be “diffraction limited” What this
+doesn’t mean is that the optic is performing
+
+131
+00:11:42,579 --> 00:11:47,940
+perfectly in this region. It just means that
+the dominant factor for reduced sharpness
+
+132
+00:11:47,940 --> 00:11:53,000
+is because of diffraction, for example because
+of a limited aperture. And to a lesser degree
+
+133
+00:11:53,000 --> 00:11:58,090
+it is due to the imperfections in things like
+surface shape. So, in a sense the value of
+
+134
+00:11:58,090 --> 00:12:04,070
+0.83 is similar to stating that ¼ lambda
+Peak to valley wavefront error is “diffraction
+
+135
+00:12:04,070 --> 00:12:08,720
+limited”. Because both these values are
+kind of arbitrary definitions of what is meant
+
+136
+00:12:08,720 --> 00:12:14,310
+by “diffraction limited”.
+So our reference surface turns out to be very
+
+137
+00:12:14,310 --> 00:12:19,470
+accurate, as we can conclude from both the
+Strehl value as well as from the PV wavefront
+
+138
+00:12:19,470 --> 00:12:24,690
+error. But of course, that is kind of essential
+if you want to use it to measure optical quality
+
+139
+00:12:24,690 --> 00:12:31,560
+of other objects in the high-end of the range.
+The first thing we are going to measure is
+
+140
+00:12:31,560 --> 00:12:38,260
+the surface shape of this spherical Zerodur
+mirror. It’s about 250mm in diameter and
+
+141
+00:12:38,260 --> 00:12:44,890
+has a radius of curvature of 350mm. I bought
+the mirror about 10 years ago on eBay for
+
+142
+00:12:44,890 --> 00:12:50,880
+around 100 Euros. The reflective coating was
+in pretty bad shape, so I removed it. But
+
+143
+00:12:50,880 --> 00:12:56,670
+the remaining surface reflectivity is 4%,
+which is ideal in this test setup. The mirror
+
+144
+00:12:56,670 --> 00:13:02,320
+itself is from a 1970s Perkin-Elmer wafer
+scanner system. This was the first commercial
+
+145
+00:13:02,320 --> 00:13:08,320
+photolithographic system that used non-contact
+exposure of silicon wafers. So given its original
+
+146
+00:13:08,320 --> 00:13:13,440
+application, you’d expect this mirror to
+be quite accurate.
+
+147
+00:13:13,440 --> 00:13:18,050
+The way we measure this mirror is with the
+focus of the reference element in the center
+
+148
+00:13:18,050 --> 00:13:22,440
+of the radius of curvature of the mirror.
+So, the tightly focused light beam from the
+
+149
+00:13:22,440 --> 00:13:28,110
+interferometer expands and reflects off the
+mirror surface. It then returns along approximately
+
+150
+00:13:28,110 --> 00:13:33,400
+the same path and is recombined with the spherical
+reference wavefront that reflects of the reference
+
+151
+00:13:33,400 --> 00:13:38,620
+element. And any deviations from spherical
+in the mirror surface will cause phase shifts
+
+152
+00:13:38,620 --> 00:13:43,050
+between the light reflecting off the mirror
+surface and the spherical reference. And this
+
+153
+00:13:43,050 --> 00:13:48,470
+can then be observed as interference.
+Here are a few typical interferograms that
+
+154
+00:13:48,470 --> 00:13:53,890
+were measured with this mirror under a slight
+tilt. Even though the mirror is strongly curved,
+
+155
+00:13:53,890 --> 00:13:58,310
+you can observe that in the measurements,
+it only covers about half the diameter of
+
+156
+00:13:58,310 --> 00:14:02,870
+the total measurement area available. And
+this makes our accuracy of measurement much
+
+157
+00:14:02,870 --> 00:14:08,769
+higher than 1/20th of a wavelength.
+So from the interferograms just collected,
+
+158
+00:14:08,769 --> 00:14:12,579
+the wavefront differences between the mirror
+surface and that of the reference element
+
+159
+00:14:12,579 --> 00:14:17,500
+is calculated in DFTfringe. you can see that
+the peak to valley accuracy of this mirror
+
+160
+00:14:17,500 --> 00:14:23,680
+itself is around 1/10th of a wavelength. In
+terms of surface shape accuracy, this means
+
+161
+00:14:23,680 --> 00:14:30,860
+that the mirror never deviates more than around
+30nm of that of a perfect sphere. Anyway,
+
+162
+00:14:30,860 --> 00:14:35,430
+being able to measure with this level of precision
+is actually pretty cool and it gave me confidence
+
+163
+00:14:35,430 --> 00:14:40,470
+that the instrument performs as expected.
+By the way, if you have ever tried to make
+
+164
+00:14:40,470 --> 00:14:45,610
+a telescope mirror by hand yourself, you might
+observe something familiar in the wavefron
+
+165
+00:14:45,610 --> 00:14:53,759
+plot: the mirror has a slightly turned down
+edge, although very small, around 15nm or
+
+166
+00:14:53,759 --> 00:14:56,510
+so.
+Next on the list of items to test is this
+
+167
+00:14:56,510 --> 00:15:03,750
+Canon FD 55mm F/1.2 lens. This is a rather
+famous vintage lens in the sense that it was
+
+168
+00:15:03,750 --> 00:15:10,060
+actually the first consumer lens containing
+an aspherical element. With its F/1.2 aperture,
+
+169
+00:15:10,060 --> 00:15:15,070
+it’s very light sensitive and therefore
+well suited for indoor photography without
+
+170
+00:15:15,070 --> 00:15:21,019
+using a flash. The earliest versions of this
+lens introduced in 1971, contained radioactive
+
+171
+00:15:21,019 --> 00:15:27,350
+Thorium Oxide, but this one, which was bought
+by my father in march 1980, does not contain
+
+172
+00:15:27,350 --> 00:15:32,269
+Thorium. Therefore, it also does not display
+the characteristic radiation browning observed
+
+173
+00:15:32,269 --> 00:15:37,639
+in radioactive lenses. On top of that it has
+lived in a box most of its life so it’s
+
+174
+00:15:37,639 --> 00:15:42,680
+in nearly pristine condition.
+For testing the wavefront deformation in this
+
+175
+00:15:42,680 --> 00:15:48,691
+lens, we utilize a configuration called autocollimation,
+which is schematically depicted here. Because
+
+176
+00:15:48,691 --> 00:15:52,769
+the light passes through the lens twice in
+this test, many aberrations are measured to
+
+177
+00:15:52,769 --> 00:15:57,810
+be twice as large as they would be with a
+single pass. So when this configuration is
+
+178
+00:15:57,810 --> 00:16:03,709
+used, it requires us to interpret the fringe
+spacing as equivalent with only 0.5 wavelength
+
+179
+00:16:03,709 --> 00:16:09,399
+instead of 1 wavelength.
+Before I show you the result of the measurement,
+
+180
+00:16:09,399 --> 00:16:15,009
+I should mention that doing a wavefront measurement
+on a lens is not in any way representative
+
+181
+00:16:15,009 --> 00:16:20,690
+for overall lens performance. Basically, we
+are testing with only one particular wavelength
+
+182
+00:16:20,690 --> 00:16:26,819
+of light on the optical axis with the focus
+setting to infinity. So, factors like chromatic
+
+183
+00:16:26,819 --> 00:16:31,930
+aberrations, off-axis performance in the image
+field and the at proximity are not included
+
+184
+00:16:31,930 --> 00:16:36,760
+in this test. I've actually made a video on
+how to quantitatively measure all these aspects
+
+185
+00:16:36,760 --> 00:16:42,089
+using another method and obtain a more holistic
+performance. But even with all the limitations,
+
+186
+00:16:42,089 --> 00:16:48,029
+I think it is worthwhile to take a look at
+the wavefront error that this lens introduces.
+
+187
+00:16:48,029 --> 00:16:52,089
+So here is the wavefront error of the lens
+at its full aperture and as you can see, it’s
+
+188
+00:16:52,089 --> 00:16:58,800
+is actually pretty large. The total P-V wavefront
+error is more than 3 lambda and the most apparent
+
+189
+00:16:58,800 --> 00:17:05,699
+errors are spherical aberration and some astigmatisms.
+The Strehl ratio is quite disappointing as
+
+190
+00:17:05,699 --> 00:17:11,099
+well. As a consequence, this lens can never
+provide high sharpness images at the maximum
+
+191
+00:17:11,099 --> 00:17:16,309
+aperture. Now, it’s interesting to see what
+happens if we limit the aperture of this lens
+
+192
+00:17:16,310 --> 00:17:21,880
+to let’s say to F/4.0. By doing that, we
+will lose a lot of light, about 90%. But this
+
+193
+00:17:21,880 --> 00:17:27,001
+also limits the wavefront error to the one
+present in this central part here. So, if
+
+194
+00:17:27,001 --> 00:17:32,910
+we do the same wavefront analysis at F/4,
+suddenly the lens performs diffraction limited.
+
+195
+00:17:32,910 --> 00:17:38,940
+Because reducing aperture to F/4 eliminates
+almost all of the spherical error and the
+
+196
+00:17:38,940 --> 00:17:44,140
+astigmatism which is present in the wavefront
+at full aperture.
+
+197
+00:17:44,140 --> 00:17:51,410
+Here is a comparison of the text on a permanent
+marker shot with F/1.2 and F/4 on an aps-c
+
+198
+00:17:51,410 --> 00:17:57,250
+sensor. It’s clear that the 3-lambda wavefront
+error is influencing the sharpness and contrast
+
+199
+00:17:57,250 --> 00:18:02,210
+pretty badly. So, I guess the only way to
+use this lens effectively is to always set
+
+200
+00:18:02,210 --> 00:18:06,850
+it to a smaller aperture whenever there is
+sufficient light available, otherwise you’ll
+
+201
+00:18:06,850 --> 00:18:15,880
+end up with very soft images.
+The Canon EF 24 to 105mm full frame zoom lens
+
+202
+00:18:15,880 --> 00:18:20,789
+is next on our list. I just want to take a
+very brief look at it, mainly because I sometimes
+
+203
+00:18:20,789 --> 00:18:26,320
+use it for my YouTube videos. With its maximum
+aperture of F/4 over the whole zoom range
+
+204
+00:18:26,320 --> 00:18:32,220
+it is not particularly photon hungry. But
+it always produces excellent image sharpness,
+
+205
+00:18:32,220 --> 00:18:38,820
+which made me curious about how small the
+wavefront errors in a high-quality lens are.
+
+206
+00:18:38,820 --> 00:18:44,640
+It was measured in the same way as the F/1.2
+lens, so in autocollimation. And here are
+
+207
+00:18:44,640 --> 00:18:53,220
+the wavefront errors at focal length settings
+of 24mm, 50mm and 105mm. The largest wavefront
+
+208
+00:18:53,220 --> 00:18:59,390
+errors are found at 105mm focal distance,
+where the Strehl ratio has dropped to 0.6.
+
+209
+00:18:59,390 --> 00:19:05,600
+Which by the way is still a very decent value.
+In the center of the range, its performance
+
+210
+00:19:05,600 --> 00:19:11,960
+is basically diffraction limited. So concluding:
+this lens performs well in the full zoom range.
+
+211
+00:19:11,960 --> 00:19:18,260
+That is of course, within all the limitations
+of the current testing method.
+
+212
+00:19:18,260 --> 00:19:22,590
+If you made it this far into the video you
+are probably more than averagely interested
+
+213
+00:19:22,590 --> 00:19:28,160
+in optics. So, for this last part I thought
+I’d present measurements that I did on microscope
+
+214
+00:19:28,160 --> 00:19:32,710
+objectives. All objectives presented here
+are all so called “infinity corrected”
+
+215
+00:19:32,710 --> 00:19:37,050
+objectives. This means that they are designed
+to work in combination with a so-called tube
+
+216
+00:19:37,050 --> 00:19:42,390
+lens rather than create an image directly
+like is the case with a proximity-corrected
+
+217
+00:19:42,390 --> 00:19:49,620
+objectives. Since infinity corrected objectives
+basically project their image at infinity,
+
+218
+00:19:49,620 --> 00:19:55,370
+this allows us to correctly use the autocollimation
+configuration for testing.
+
+219
+00:19:55,370 --> 00:20:01,210
+Unlike camera lenses, microscope objectives
+aren't specified by focal length and maximum
+
+220
+00:20:01,210 --> 00:20:06,799
+focal distance to aperture ratio. Instead,
+they are characterized by magnification and
+
+221
+00:20:06,799 --> 00:20:13,700
+numerical aperture. I’ll very briefly discuss
+these two aspects first.
+
+222
+00:20:13,700 --> 00:20:18,350
+Magnification describes the ratio between
+the object size and image size that a particular
+
+223
+00:20:18,350 --> 00:20:22,990
+microscope objective is designed for. You
+can of course try to use it at a different
+
+224
+00:20:22,990 --> 00:20:28,240
+magnification by changing both the lens-object
+distance and the lens-image distance. But
+
+225
+00:20:28,240 --> 00:20:33,180
+if you do that, it will not perform optimally.
+And this is important because microscope optics
+
+226
+00:20:33,180 --> 00:20:38,180
+is required to work close to the theoretical
+best performance. So in this sense, a microscope
+
+227
+00:20:38,180 --> 00:20:41,919
+objective is a bit different from a camera
+lens, which is basically designed to give
+
+228
+00:20:41,919 --> 00:20:47,900
+you acceptable image quality over a wide range
+of object to lens distances.
+
+229
+00:20:47,900 --> 00:20:54,030
+Now, specifying a high magnification is only
+useful if the sharpness in the image keeps
+
+230
+00:20:54,030 --> 00:20:59,830
+up with the magnification that is specified.
+And that is why the Magnification and Numerical
+
+231
+00:20:59,830 --> 00:21:05,630
+Aperture of objectives are related, because
+Numerical Aperture is a key parameter for
+
+232
+00:21:05,630 --> 00:21:13,049
+resolving small features.
+By definition, the NA is equal to the refractive
+
+233
+00:21:13,049 --> 00:21:18,919
+index of the medium that contains the object,
+times the SIN() of the maximum angle theta
+
+234
+00:21:18,919 --> 00:21:25,110
+at which light originating from the object
+can be captured. This means that NA increases
+
+235
+00:21:25,110 --> 00:21:30,971
+with the refractive index of the medium and
+with the value of theta. Now, since all the
+
+236
+00:21:30,971 --> 00:21:36,051
+objectives I will discuss today are intended
+for use in air and not in water- or oil, we
+
+237
+00:21:36,051 --> 00:21:42,049
+can simplify things because the refractive
+index of air is 1. So for now we can just
+
+238
+00:21:42,049 --> 00:21:47,880
+ignore the refractive index which means that
+NA in all cases discussed here is just equal
+
+239
+00:21:47,880 --> 00:21:53,679
+to the sin() of theta.
+The exact reason why NA is the key parameter
+
+240
+00:21:53,679 --> 00:21:58,980
+for achieving a high sharpness is quite fascinating.
+But it is kind of a rabbit hole, which I don’t
+
+241
+00:21:58,980 --> 00:22:05,080
+want to dive into now. Today I will just show
+you the formula. So, the size of the smallest
+
+242
+00:22:05,080 --> 00:22:09,390
+features that can theoretically be resolved
+by a microscope objective are proportional
+
+243
+00:22:09,390 --> 00:22:15,730
+to a constant, times the wavelength of light,
+divided by the numerical aperture. This means
+
+244
+00:22:15,730 --> 00:22:20,679
+that it is possible to resolve smaller features
+by either using a shorter wavelength of light,
+
+245
+00:22:20,679 --> 00:22:26,940
+or use a higher NA.
+This relationship explains why magnification
+
+246
+00:22:26,940 --> 00:22:32,900
+and numerical aperture are so closely related
+in the specification of microscope objectives.
+
+247
+00:22:32,900 --> 00:22:37,929
+Because attempting to pair a high magnification
+with a low numerical aperture is pretty useless:
+
+248
+00:22:37,929 --> 00:22:41,800
+it will just result in a magnified image of
+poor sharpness.
+
+249
+00:22:41,800 --> 00:22:50,029
+Let’s have a look at the measurements on
+this Nikon 10x objective with a N.A. of 0.3.
+
+250
+00:22:50,029 --> 00:22:54,850
+Here is an image of the wavefront error of
+this objective and it shows us that the errors
+
+251
+00:22:54,850 --> 00:23:00,700
+are in fact very small. The wavefront is accurate
+within seven hundredths of a wavelength for
+
+252
+00:23:00,700 --> 00:23:06,990
+the entire aperture, the Strehl is 0.99, so
+this is looking great. The major contribution
+
+253
+00:23:06,990 --> 00:23:11,770
+in the surface error is actually a very slight
+spherical aberration, but all in all, this
+
+254
+00:23:11,770 --> 00:23:17,700
+is really a top-quality piece.
+Now, let's examine a different objective,
+
+255
+00:23:17,700 --> 00:23:26,000
+like this 20x Leica Fluotar with a NA of 0.5,
+and do the same wavefront measurement. Interestingly,
+
+256
+00:23:26,000 --> 00:23:32,090
+the spherical aberration in this objective
+is noticably more pronounced. Both the total
+
+257
+00:23:32,090 --> 00:23:37,600
+peak-valley error as well as the Strehl ratio
+is only just on the good side of the diffraction
+
+258
+00:23:37,600 --> 00:23:42,080
+limit. Now, it might be tempting to conclude
+that this objective is not as good as the
+
+259
+00:23:42,080 --> 00:23:46,770
+previous one, but that's not the case. The
+reason behind the spherical aberration is
+
+260
+00:23:46,770 --> 00:23:52,480
+in this particular number that can be found
+on the objective. The number represents the
+
+261
+00:23:52,480 --> 00:23:56,620
+optimum cover slip thickness in millimeters
+for this objective.
+
+262
+00:23:56,620 --> 00:24:01,659
+So, what the manufacturer assumes is that
+you are going to use a glass cover slip when
+
+263
+00:24:01,659 --> 00:24:06,909
+you use your microscope and it therefore it
+has already compensated the optical properties
+
+264
+00:24:06,909 --> 00:24:14,590
+for a specific glass thickness. Now, you might:
+think huh 0.17mm of glass thickness, how is
+
+265
+00:24:14,590 --> 00:24:19,990
+that ever going to influence the focus? And
+indeed, with low numerical aperture optics
+
+266
+00:24:19,990 --> 00:24:26,419
+there will generally not be a problem. However,
+with increasing NA, even a glass plate this
+
+267
+00:24:26,419 --> 00:24:31,480
+thin can introduce a significant spherical
+aberration. This is illustrated in this ray
+
+268
+00:24:31,480 --> 00:24:39,770
+tracing figure for a 0.7 NA. In a perfect
+optic, all rays will end in a single point.
+
+269
+00:24:39,770 --> 00:24:45,669
+But add a cover glass and suddenly the area
+where the rays end up has significant size.
+
+270
+00:24:45,669 --> 00:24:51,309
+Now of course the previous wavefront measurement
+was done without a cover slip. So, the question
+
+271
+00:24:51,309 --> 00:24:56,549
+is what happens if we add a cover slip in
+the light path? I quickly tried this with
+
+272
+00:24:56,549 --> 00:25:03,620
+a glass thickness of 0.16mm, so close to the
+optimum value and it resulted in this measurement:
+
+273
+00:25:03,620 --> 00:25:08,470
+it reduced the spherical aberration quite
+a bit. And so, this is something to realize
+
+274
+00:25:08,470 --> 00:25:14,830
+when you use a high-NA objectives: that it
+can only perform at its peak performance when
+
+275
+00:25:14,830 --> 00:25:19,760
+used in combination with the cover slip thickness
+specified.
+
+276
+00:25:19,760 --> 00:25:26,640
+So a few years ago, I bought this unmarked
+NIKON 20x Plan APO OEM objective for use in
+
+277
+00:25:26,640 --> 00:25:32,960
+my maskless wafer stepper. These Nikon objectives
+can be purchased on eBay for around 100 dollars
+
+278
+00:25:32,960 --> 00:25:38,120
+apiece and are widely available. It was in
+perfect shape when it got here but when I
+
+279
+00:25:38,120 --> 00:25:43,971
+started using it, something was a bit off,
+dependent on how I used it exactly. Now, when
+
+280
+00:25:43,971 --> 00:25:50,870
+I published the video on the maskless wafer
+stepper, people at a forum called photomicrography.net
+
+281
+00:25:50,870 --> 00:25:55,730
+made me aware of the fact that these particular
+types of objectives aren't optically the same
+
+282
+00:25:55,730 --> 00:26:01,380
+as the corresponding standard Nikon microscope
+objectives; they are actually modified versions
+
+283
+00:26:01,380 --> 00:26:06,440
+that are designed for a different cover slip
+thickness. The forum thread on this subject
+
+284
+00:26:06,440 --> 00:26:11,460
+mentioned that these perform better when used
+in combination with 2 or 3 cover slips. And
+
+285
+00:26:11,460 --> 00:26:15,919
+since I now have an interferometer available
+let’s see if we can narrow this value down
+
+286
+00:26:15,919 --> 00:26:21,080
+a bit further.
+Here is the spherical aberration of the objective
+
+287
+00:26:21,080 --> 00:26:26,649
+without a cover slip. The wavefront error
+is 1 lambda, so without a correction, it will
+
+288
+00:26:26,649 --> 00:26:32,149
+certainly perform very poorly. Here I summarized
+the individual wavefront measurements for
+
+289
+00:26:32,149 --> 00:26:42,610
+0, 1, 2, 3 and 4 cover slips. I think the
+effect of adding more glass is pretty clear.
+
+290
+00:26:42,610 --> 00:26:47,779
+You can see that the wavefront error sort
+of flips over between 2 and 3 cover slips
+
+291
+00:26:47,779 --> 00:26:52,690
+of glass thickness.
+What we can do now is take for example the
+
+292
+00:26:52,690 --> 00:26:57,100
+peak to valley spherical aberration from these
+measurements and plot the values as a function
+
+293
+00:26:57,100 --> 00:27:01,909
+of the total glass thickness in a graph. And
+by fitting a line through these data, we find
+
+294
+00:27:01,909 --> 00:27:10,330
+that a minimum aberration is at around 0.42-0.43mm.
+And this thickness is right between 2 and
+
+295
+00:27:10,330 --> 00:27:15,070
+3 cover slips, like it was stated on the forum.
+Here is a similar graph that I made for the
+
+296
+00:27:15,070 --> 00:27:22,020
+maximum Strehl ratio, which yields exactly
+the same outcome. So, if we were to add a
+
+297
+00:27:22,020 --> 00:27:27,270
+0.42 mm glass sheet when using it, we can
+effectively get rid of the huge spherical
+
+298
+00:27:27,270 --> 00:27:31,980
+aberration completely and use this objective
+at its maximum performance level again.
+
+299
+00:27:31,980 --> 00:27:38,590
+Okay, we’ve finally come to the end of the
+video. I hope I gave you some ideas of how
+
+300
+00:27:38,590 --> 00:28:06,960
+interferometry can be used for optical testing.
+Thanks for watching.
+

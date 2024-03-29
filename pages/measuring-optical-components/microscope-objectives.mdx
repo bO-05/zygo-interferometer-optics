@@ -1,0 +1,37 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Measuring Microscope Objectives
+
+In this section, we will explore the use of the ZYGO interferometer to measure the wavefront error of various microscope objectives. Unlike camera lenses, microscope objectives are designed to work in combination with a tube lens and are characterized by their magnification and numerical aperture (NA).
+
+## Understanding Microscope Objectives
+
+Microscope objectives are designed to work close to their theoretical best performance, making them different from camera lenses that provide acceptable image quality over a wide range of object-to-lens distances. The two key parameters for microscope objectives are:
+
+1. **Magnification**: The ratio between the object size and image size that the objective is designed for.
+2. **Numerical Aperture (NA)**: A measure of the objective's ability to resolve small features, determined by the refractive index of the medium containing the object and the maximum angle at which light from the object can be captured.
+
+<Callout type="info">
+The relationship between the smallest resolvable feature size, wavelength, and NA is given by:
+
+$d = \frac{k \lambda}{NA}$
+
+where $d$ is the smallest resolvable feature size, $k$ is a constant, $\lambda$ is the wavelength of light, and $NA$ is the numerical aperture.
+</Callout>
+
+## Testing Infinity-Corrected Objectives
+
+The microscope objectives discussed in this section are all infinity-corrected, meaning they are designed to work with a tube lens rather than create an image directly. This allows us to use the autocollimation configuration for testing.
+
+```mermaid
+graph LR
+A[Objective] -- Infinity-corrected image --> B[Tube Lens] -- Focused image --> C[Camera/Eyepiece]
+```
+
+## Subsections
+
+- [Magnification and Numerical Aperture](/measuring-optical-components/microscope-objectives/magnification-numerical-aperture)
+- [Cover Slip Thickness](/measuring-optical-components/microscope-objectives/cover-slip-thickness)
+- [Nikon 20x Plan APO OEM Objective](/measuring-optical-components/microscope-objectives/nikon-20x-plan-apo-oem)
+
+Through these subsections, we will examine the wavefront error and effects of cover slip thickness on various microscope objectives, providing insights into their performance and the importance of using them under the correct conditions.

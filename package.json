@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "next": "^14.1.4",
+    "nextra": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.3"
+  },
+  "name": "Optical-with-lumentis",
+  "description": "This two-part video series explores optical interferometry principles and demonstrates measuring various optical components using a ZYGO GPI LC interferometer from the 1990s, including upgrading it with a modern camera for detailed wavefront analysis.",
+  "version": "0.0.1",
+  "scripts": {
+    "devstart": "next dev -p 5656 & node start.js",
+    "dev": "next dev -p 5656",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "Optical interferometry",
+    "Wavefront analysis",
+    "ZYGO interferometer",
+    "Interferogram evaluation",
+    "DFTfringe software",
+    "Spherical aberration",
+    "Microscope objectives",
+    "Numerical aperture",
+    "Lens testing",
+    "Diffraction limit"
+  ]
+}

@@ -1,0 +1,1425 @@
+1
+00:00:02,100 --> 00:00:06,300
+Hi everyone,
+Today I want to talk about optical interferometry,  
+
+2
+00:00:06,300 --> 00:00:11,700
+a method that is frequently used to measure the 
+properties of optical components and systems.  
+
+3
+00:00:12,240 --> 00:00:18,060
+What initially made me want to do a video about 
+this subject is this ZYGO interferometer, that I  
+
+4
+00:00:18,060 --> 00:00:23,580
+bought a while ago second hand. A new instrument 
+of this type is financially far out of my reach,  
+
+5
+00:00:23,580 --> 00:00:28,740
+and I must admit, this one wasn’t a bargain 
+either. But the thing is, I’ve wanted to own  
+
+6
+00:00:28,740 --> 00:00:34,620
+a high-quality interferometer for a long time, 
+if only to get away from the DIY-setups I’ve  
+
+7
+00:00:34,620 --> 00:00:39,720
+used so far. And since these instruments are 
+not abundantly available second hand, I just  
+
+8
+00:00:39,720 --> 00:00:46,440
+had to take this rare opportunity to buy one.
+In case you have no idea what this instrument is:  
+
+9
+00:00:46,440 --> 00:00:52,500
+with it you can very accurately measure the 
+shape of flat and spherical optical interfaces,  
+
+10
+00:00:52,500 --> 00:00:58,260
+like the ones you find on lenses and mirrors. And 
+with accurately I mean: in the nanometer range.  
+
+11
+00:00:58,860 --> 00:01:03,780
+But not only that, you can also measure the 
+performance of complete optical systems. So,  
+
+12
+00:01:03,780 --> 00:01:09,600
+a good interferometer is an indispensable tool for 
+anyone involved in optical fabrication. Because  
+
+13
+00:01:09,600 --> 00:01:15,600
+in the end, the quality of your optics is mainly 
+limited by the quality of your testing methods. 
+ 
+
+14
+00:01:17,400 --> 00:01:23,280
+This particular instrument was produced 
+by ZYGO in August of 1996. It was sold  
+
+15
+00:01:23,280 --> 00:01:27,300
+to Philips Electronics in Eindhoven, 
+where it was used to check the surface  
+
+16
+00:01:27,300 --> 00:01:31,980
+shape of lenses for special optical 
+disk drives. From what I understood,  
+
+17
+00:01:31,980 --> 00:01:37,200
+some of these lenses were produced from small 
+polished glass balls. These were cut in pieces,  
+
+18
+00:01:37,200 --> 00:01:41,400
+and then transformed into very short 
+focal distance lenses. Now, at some point,  
+
+19
+00:01:41,400 --> 00:01:47,640
+the activity was transferred to a Philips spin-off 
+called Anteryon and the interferometer was sold to  
+
+20
+00:01:47,640 --> 00:01:52,980
+an employee, who basically stored it for a couple 
+of years. He then sold it to me, together with a  
+
+21
+00:01:52,980 --> 00:01:57,600
+black and white monitor and the transmission 
+sphere that was used to test the lenses.
+ 
+
+22
+00:01:58,800 --> 00:02:02,940
+In this video, I’ll first discuss 
+the principle behind interferometry,  
+
+23
+00:02:02,940 --> 00:02:07,380
+and then we will look at the layout of the 
+instrument and how it works exactly. And in  
+
+24
+00:02:07,380 --> 00:02:12,000
+an upcoming video I will show how I pimped the 
+instrument a bit with a modern ccd camera. 
+ 
+
+25
+00:02:13,080 --> 00:02:18,360
+As I said earlier, in optics manufacture, 
+interferometry is a frequently used method  
+
+26
+00:02:18,360 --> 00:02:23,760
+to characterize both optical surfaces as well 
+as complete systems. The method is based on  
+
+27
+00:02:23,760 --> 00:02:29,220
+analyzing interference patterns and extract so 
+called “wavefront” information from them and I  
+
+28
+00:02:29,220 --> 00:02:34,920
+will discuss the meaning of the word wavefront in 
+a second. Interferometry is an extremely sensitive  
+
+29
+00:02:34,920 --> 00:02:40,380
+and accurate method that can be used to establish 
+the general shape of an interface, but also things  
+
+30
+00:02:40,380 --> 00:02:46,800
+like waviness or even surface roughness. It 
+does also have some limitations: The measurement  
+
+31
+00:02:46,800 --> 00:02:53,640
+range is generally fairly limited to several 
+microns. Also, it’s unsuitable for interfaces that  
+
+32
+00:02:53,640 --> 00:02:59,700
+contain sharp step-like height features, because 
+these cannot be unambiguously identified. So,  
+
+33
+00:02:59,700 --> 00:03:05,520
+in general, interferometry is most accurate when 
+the surfaces we want to test are fairly smooth. 
+ 
+
+34
+00:03:06,420 --> 00:03:11,700
+Now, I just mentioned the word “wavefront”, 
+which I think is not a trivial concept.  
+
+35
+00:03:11,700 --> 00:03:16,980
+I guess we have all experienced wavefronts at some 
+point in our lives but I’m not referring to those.  
+
+36
+00:03:16,980 --> 00:03:24,420
+In optics a wavefront is actually a continuous set 
+of points that have identical phase. So, what does  
+
+37
+00:03:24,420 --> 00:03:30,120
+that mean? Well, from a classical viewpoint, light 
+is an electromagnetic field that harmonically  
+
+38
+00:03:30,120 --> 00:03:36,180
+oscillates and propagates in space. And at any 
+given point in this process, the electric and  
+
+39
+00:03:36,180 --> 00:03:40,620
+magnetic field components can be described by 
+the Maxwell equations. So here I’ve tried to  
+
+40
+00:03:40,620 --> 00:03:46,800
+schematically draw the electromagnetic field in 
+a somewhat larger volume and if you examine the  
+
+41
+00:03:46,800 --> 00:03:51,840
+phase of these waves, you can identify planes 
+where the phase of the electromagnetic field  
+
+42
+00:03:51,840 --> 00:03:58,380
+is identical. And a continuous set of points that 
+have the same phase value is called a wavefront. 
+ 
+
+43
+00:04:00,180 --> 00:04:06,300
+One property of a wavefront is that its shape 
+is always transverse or perpendicular to the  
+
+44
+00:04:06,300 --> 00:04:10,980
+local direction of wave propagation. Here 
+this is illustrated for a few differently  
+
+45
+00:04:10,980 --> 00:04:16,800
+shaped wavefronts where the arrows indicate the 
+direction of wave propagation. Now in general,  
+
+46
+00:04:16,800 --> 00:04:22,140
+phase relationships for different points in 
+space are only well-defined when the waves  
+
+47
+00:04:22,140 --> 00:04:27,840
+have one specific wavelength. And if we want to 
+do interferometry, it is vital that the light we  
+
+48
+00:04:27,840 --> 00:04:33,360
+use is of one particular wavelength, which 
+is also called monochromatic light. And in  
+
+49
+00:04:33,360 --> 00:04:38,100
+the rest of the video, I’ll assume that the 
+light used is more or less monochromatic.
+ 
+
+50
+00:04:39,120 --> 00:04:44,940
+A frequently used way to generate monochromatic 
+radiation is by means of a laser. This is because,  
+
+51
+00:04:44,940 --> 00:04:50,820
+the process of stimulated emission which takes 
+place in the laser cavity, favors the generation  
+
+52
+00:04:50,820 --> 00:04:57,840
+of light in a very narrow wavelength range. 
+Also, the wavefront exiting the laser cavity is  
+
+53
+00:04:57,840 --> 00:05:03,000
+virtually flat over the aperture. And because the 
+light has an extremely well-defined wavelength,  
+
+54
+00:05:03,000 --> 00:05:08,640
+in other words it has a very narrow spectral 
+bandwidth, phase relationships in the field  
+
+55
+00:05:08,640 --> 00:05:15,540
+exiting the laser can be preserved over long 
+distances. Another way to say this is that lasers  
+
+56
+00:05:15,540 --> 00:05:21,900
+have a large coherence length, which is generally 
+between half a meter up to several kilometers for  
+
+57
+00:05:21,900 --> 00:05:28,560
+certain special types of lasers. In practice 
+this means that, if we take 2 points A and B in  
+
+58
+00:05:28,560 --> 00:05:33,900
+the light path and we look at the variations in 
+the phase difference between these 2 points, we  
+
+59
+00:05:33,900 --> 00:05:40,020
+will find that these will be relatively small. And 
+the distance over which variations in phase remain  
+
+60
+00:05:40,020 --> 00:05:46,140
+acceptable is called the coherence length. As you 
+can see from this equation, the coherence length  
+
+61
+00:05:46,140 --> 00:05:52,080
+(Lc) is inversely proportional to the spectral 
+band width (delta nu) of the light source. And  
+
+62
+00:05:52,080 --> 00:05:57,480
+so light sources with a very narrow emission line 
+will generally have a long coherence length. 
+ 
+
+63
+00:05:58,500 --> 00:06:03,720
+Another source of monochromatic light frequently 
+used in interferometry is the low-pressure sodium  
+
+64
+00:06:03,720 --> 00:06:10,680
+lamp, which mainly generates light in a 
+narrow emission band at 589nm. However,  
+
+65
+00:06:10,680 --> 00:06:15,780
+the spectral bandwidth of the Sodium emission 
+line is much broader than that of lasers and  
+
+66
+00:06:15,780 --> 00:06:20,640
+the phase relationships generally only 
+hold over distances smaller than a mm.
+ 
+
+67
+00:06:22,080 --> 00:06:26,460
+Now, measuring the shape of a wavefront 
+directly in the visible part of the  
+
+68
+00:06:26,460 --> 00:06:32,100
+electromagnetic spectrum is not easy and that is 
+because of the very high frequencies involved.  
+
+69
+00:06:32,100 --> 00:06:37,080
+For electromagnetic radiation of longer 
+wavelengths, like for example radio waves,  
+
+70
+00:06:37,080 --> 00:06:42,420
+we can measure the phase of the alternating fields 
+directly. And that is because the oscillations  
+
+71
+00:06:42,420 --> 00:06:47,580
+have a relatively low frequency, say generally 
+somewhere in the mega- or giga- Hertz range.  
+
+72
+00:06:47,580 --> 00:06:53,400
+And so, we can point a bunch of antennas to the 
+sky, measure the Electromagnetic signals that  
+
+73
+00:06:53,400 --> 00:06:58,380
+are received in each of them and establish the 
+shape of the wavefront for a particular frequency  
+
+74
+00:06:58,380 --> 00:07:04,440
+by looking for phase correlations. And based on 
+this information we can then identify the exact  
+
+75
+00:07:04,440 --> 00:07:10,680
+direction from which the radiation is emitted. But 
+visible light has a frequency more than a thousand  
+
+76
+00:07:10,680 --> 00:07:16,440
+times higher than even the highest frequency 
+radio waves. And for frequencies this high, it is  
+
+77
+00:07:16,440 --> 00:07:21,420
+technically infeasible to measure phase directly 
+for an oscillating electromagnetic field.
+ 
+
+78
+00:07:22,980 --> 00:07:28,380
+However, what we can easily measure with 
+optical detectors, like CCD- or CMOS-sensors,  
+
+79
+00:07:28,380 --> 00:07:33,720
+is spatial intensity variations. And 
+that is where interferometry comes in:  
+
+80
+00:07:33,720 --> 00:07:39,780
+instead of trying to measure the phase in light 
+directly, this method works by studying the  
+
+81
+00:07:39,780 --> 00:07:45,720
+interference patterns resulting from the addition 
+of a second wavefront that has a known shape.
+ 
+
+82
+00:07:47,460 --> 00:07:51,060
+Let me start by showing you a very simple 
+example of how this works in light.  
+
+83
+00:07:51,720 --> 00:07:57,420
+For this experiment we need a monochromatic 
+light source and a flat surface. As a light  
+
+84
+00:07:57,420 --> 00:08:02,100
+source we’ll use a sodium lamp and for the 
+surface we will use a flat optical test glass.  
+
+85
+00:08:03,060 --> 00:08:07,620
+Now, a typical air-glass interface 
+reflects about 4% of the incident light  
+
+86
+00:08:07,620 --> 00:08:12,060
+and with a uniform light source, 
+we observe a uniform reflection.  
+
+87
+00:08:12,960 --> 00:08:18,900
+Let’s now place 2 differently shaped surfaces on 
+top of this reference surface for evaluation. What  
+
+88
+00:08:18,900 --> 00:08:24,540
+we observe is that these objects show 2 different 
+interference patterns. The part to the left,  
+
+89
+00:08:24,540 --> 00:08:30,180
+shows straight lines with equal spacing. And the 
+one to the right, displays these curved lines or  
+
+90
+00:08:30,180 --> 00:08:35,880
+circular fringes, depending on the exact surface 
+orientation. Now, it’s these intensity variations  
+
+91
+00:08:35,880 --> 00:08:41,520
+that actually contain detailed information about 
+the difference in shape between reference surface  
+
+92
+00:08:41,520 --> 00:08:46,980
+and the two surfaces under test. We just need 
+to know how to interpret what we see exactly. 
+ 
+
+93
+00:08:48,780 --> 00:08:54,360
+So, what do we see? Well let me explain with 
+an animation. I admit, the following is a  
+
+94
+00:08:54,360 --> 00:08:59,100
+simplification and it’s not correctly visualizing 
+the physics, but it’s actually quite illustrative.  
+
+95
+00:08:59,100 --> 00:09:05,820
+Here is a wavefront that has just reflected off 
+a flat reference surface, so this wavefront is  
+
+96
+00:09:05,820 --> 00:09:12,420
+basically also flat. And so the image shows a 
+2D cross section of the flat optical wavefronts.  
+
+97
+00:09:13,020 --> 00:09:18,300
+If we place a sensor in the path of the 
+light, we can measure the intensity,  
+
+98
+00:09:18,300 --> 00:09:23,160
+and what we observe is that it is basically the 
+same everywhere and this tells us exactly nothing  
+
+99
+00:09:23,160 --> 00:09:28,980
+about the shape of the wavefront. Now, let’s add 
+a second wavefront that has reflected of a second  
+
+100
+00:09:28,980 --> 00:09:35,040
+surface that is slightly tilted. In this example 
+the wavefront is also flat and what we observe  
+
+101
+00:09:35,040 --> 00:09:40,740
+is that the intensity now becomes non-uniformly. 
+And this is caused by constructive and destructive  
+
+102
+00:09:40,740 --> 00:09:47,160
+interference between the 2 reflected wavefronts 
+at the second interface. Here, the electromagnetic  
+
+103
+00:09:47,160 --> 00:09:52,800
+field is the linear sum of the contributions 
+of the fields of the 2 wavefronts. And so,  
+
+104
+00:09:52,800 --> 00:09:58,020
+in some points where these contributions are 
+always in phase, they add up. On the other hand,  
+
+105
+00:09:58,020 --> 00:10:03,420
+in places where the two are exactly in out 
+of phase, the field contributions cancel each  
+
+106
+00:10:03,420 --> 00:10:09,720
+other out and if they are of equal amplitude, 
+effectively the resulting field becomes zero. 
+ 
+
+107
+00:10:11,340 --> 00:10:18,420
+In the case of 2 flat wavefronts, we will observe 
+linear and equally spaced fringes. The density of  
+
+108
+00:10:18,420 --> 00:10:23,280
+the interference pattern itself is dependent 
+on the wedge or angle between the surfaces.  
+
+109
+00:10:23,280 --> 00:10:28,620
+And the position of the fringes is dependent 
+on the distance between the two surfaces. Now,  
+
+110
+00:10:28,620 --> 00:10:34,800
+you might think that linear and equally spaced 
+fringes are indicative for the presence of 2 flat  
+
+111
+00:10:34,800 --> 00:10:41,760
+surfaces. And that is partly correct, but 2 curved 
+wavefronts with the same radius of curvature will  
+
+112
+00:10:41,760 --> 00:10:47,760
+actually also display linear and equally spaced 
+fringes, when displaced or tilted. However,  
+
+113
+00:10:47,760 --> 00:10:52,920
+when two wavefronts have different radii, this 
+results in curved fringes. This is for example  
+
+114
+00:10:52,920 --> 00:10:58,800
+the case when we have a flat- and a spherical 
+wavefront interfering. Or when we have 2 spherical  
+
+115
+00:10:58,800 --> 00:11:03,960
+wavefronts that have a different radius curvature. 
+So, I guess it is important to realize that  
+
+116
+00:11:03,960 --> 00:11:10,080
+the observed interference pattern only gives us 
+information about differences in wavefront shape.
+ 
+
+117
+00:11:10,080 --> 00:11:16,500
+In the example just shown with the sodium lamp 
+light, we only observe interference between  
+
+118
+00:11:16,500 --> 00:11:21,180
+interfaces when they are placed very close 
+together. And that is because of the limited  
+
+119
+00:11:21,180 --> 00:11:27,060
+coherence length of the light. So whether we see a 
+clear interference pattern is dependent on whether  
+
+120
+00:11:27,060 --> 00:11:33,300
+stable phase relationships exist between the 
+reflections coming off the two surfaces at the  
+
+121
+00:11:33,300 --> 00:11:38,640
+point where they start interfering. This means 
+that with a coherence length smaller than a mm,  
+
+122
+00:11:38,640 --> 00:11:43,740
+the surfaces need to be quite close to each 
+other in order to observe interference fringes. 
+ 
+
+123
+00:11:45,300 --> 00:11:50,040
+Now I just stated that in constructive 
+interference, the electromagnetic fields  
+
+124
+00:11:50,040 --> 00:11:55,620
+add up and in destructive interference, the 
+2 contributions cancel each other out. So,  
+
+125
+00:11:55,620 --> 00:12:01,320
+what does this mean for intensity? Well, 
+light intensity is equivalent to the power  
+
+126
+00:12:01,320 --> 00:12:05,880
+per unit of surface and so it is actually 
+not the same thing as the magnitude of  
+
+127
+00:12:05,880 --> 00:12:11,100
+the electromagnetic field. In fact, intensity 
+scales with the square of this field. And so,  
+
+128
+00:12:11,100 --> 00:12:17,940
+if we have 2 reflections of equal magnitude, say 
+both are 4%, this means that for the location of  
+
+129
+00:12:17,940 --> 00:12:24,000
+constructive interference, intensity could be 
+4 times as high. And that is actually what is  
+
+130
+00:12:24,000 --> 00:12:28,920
+generally observed in interference patterns: 
+that the intensity in the bright areas is  
+
+131
+00:12:28,920 --> 00:12:33,960
+much brighter than the sum of the 2 individual 
+intensities. But of course, if we look on average,  
+
+132
+00:12:33,960 --> 00:12:40,260
+the intensity over the whole area will still 
+equal to the sum of the 2 individual intensities.
+ 
+
+133
+00:12:41,340 --> 00:12:46,740
+Anyway, enough background. Let’s return to the 
+ZYGO interferometer itself and take a peek under  
+
+134
+00:12:46,740 --> 00:12:52,920
+the hood to see what’s going on inside. In order 
+to do that we need to remove 2 different lids:  
+
+135
+00:12:52,920 --> 00:12:57,480
+the outer one is made of plastic and is 
+basically just cosmetic. The second one is  
+
+136
+00:12:57,480 --> 00:13:02,580
+made out of aluminum sheet metal and is intended 
+as RF-shielding for the electronics inside. 
+ 
+
+137
+00:13:04,860 --> 00:13:09,720
+First thing you notice is, that it isn’t awfully 
+full inside. There is a helium Neon laser with  
+
+138
+00:13:09,720 --> 00:13:15,180
+its high-voltage power supply. Then there are a 
+few optical components like a steering mirror for  
+
+139
+00:13:15,180 --> 00:13:19,980
+the laser beam, a variable filter that can be 
+moved mechanically using a long rod. This rod  
+
+140
+00:13:19,980 --> 00:13:26,700
+also operates a switch, that activates either of 
+2 pcb-cameras that are also found in the top part  
+
+141
+00:13:26,700 --> 00:13:34,380
+of the interferometer. The cameras by the way 
+have CCD-chips of about 6x4mm in size and are  
+
+142
+00:13:34,380 --> 00:13:41,160
+fairly low resolution. Both cameras have lenses 
+mounted in front of them. One of the camera is  
+
+143
+00:13:41,160 --> 00:13:46,200
+above a tiny beam splitter, and the other one is 
+above a diffusor with a crosshair printed on it.  
+
+144
+00:13:46,800 --> 00:13:52,680
+In the bottom compartment, behind the lid 
+here, we find a mains 12V DC power supply,  
+
+145
+00:13:52,680 --> 00:13:58,980
+a large beam splitter, a mirror under 45 
+degrees and 4-inch collimation lens. And  
+
+146
+00:13:58,980 --> 00:14:03,780
+apart from a few brackets and mounts that hold 
+the optics together, that is basically it. 
+ 
+
+147
+00:14:05,400 --> 00:14:11,220
+So you might wonder: why was this thing the 
+price of a luxury car back in 1996? Well,  
+
+148
+00:14:11,220 --> 00:14:17,100
+apart from I suspect a healthy profit margin, 
+there are several reasons: of course, it’s not  
+
+149
+00:14:17,100 --> 00:14:22,080
+really a mass manufactured item. But another 
+reason is that every component inside appears  
+
+150
+00:14:22,080 --> 00:14:27,480
+to be of very high quality. Take for example 
+the Helium Neon laser: according to the label,  
+
+151
+00:14:27,480 --> 00:14:33,720
+the tube has been specifically selected for this 
+type of instrument. Why? Well, if we look at the  
+
+152
+00:14:33,720 --> 00:14:38,460
+specification of the coherence length of the 
+interferometer, we see that it is larger than  
+
+153
+00:14:38,460 --> 00:14:44,520
+100m. This means that the wavelength variations 
+in the laser light need to be extremely low,  
+
+154
+00:14:44,520 --> 00:14:50,520
+so that phase relationships hold over distances of 
+more than 100m. Now, I calculated what this means  
+
+155
+00:14:50,520 --> 00:14:55,440
+in terms of frequency stability and found that 
+variations in the frequency of the 632nm light  
+
+156
+00:14:55,440 --> 00:15:02,820
+cannot be more than 2. 10-7 percent. And so, this 
+means that not just any random laser will do.
+ 
+
+157
+00:15:04,200 --> 00:15:09,960
+So let me take you through the functionality of 
+all the components step by step using schematics.  
+
+158
+00:15:10,560 --> 00:15:14,700
+Here is the Helium-Neon laser, which 
+outputs a highly coherent beam of  
+
+159
+00:15:14,700 --> 00:15:19,380
+light. The direction of the beam can be 
+optimized with a small steering mirror,  
+
+160
+00:15:19,380 --> 00:15:24,720
+after which the beam goes through the variable 
+attenuation filter. This filter allows adjustment  
+
+161
+00:15:24,720 --> 00:15:30,120
+of the general brightness of the laser beam. 
+After having passed the attenuation filter, the  
+
+162
+00:15:30,120 --> 00:15:34,800
+beam is going into a gradient index lens, which 
+is connected to a very small beam splitter. 
+ 
+
+163
+00:15:36,480 --> 00:15:42,600
+Now, a gradient index lens is a small glass rod 
+that contains a gradient in refractive index,  
+
+164
+00:15:42,600 --> 00:15:48,240
+that runs from the center to edge of the rod. 
+Since the refractive index has the highest value  
+
+165
+00:15:48,240 --> 00:15:54,000
+in the center, the optical wave front in the 
+laser beam is gradually delayed more towards  
+
+166
+00:15:54,000 --> 00:15:59,640
+the center of the rod. The wavefront therefore 
+becomes curved, which effectively results in  
+
+167
+00:15:59,640 --> 00:16:05,580
+focusing of the light into a tight focal point. 
+And after passing this focal point, the beam  
+
+168
+00:16:05,580 --> 00:16:12,600
+expands again into a nicely spherical wavefront. A 
+small beam splitter sends the spherical wavefront  
+
+169
+00:16:12,600 --> 00:16:17,760
+to the partially reflective surface of a 
+second, much larger beam splitter. This  
+
+170
+00:16:17,760 --> 00:16:21,780
+surface reflects the light towards a collimation 
+lens, where the light exits the instrument. 
+ 
+
+171
+00:16:23,400 --> 00:16:28,380
+The function of the collimation lens is to 
+convert the spherical wavefront into a flat  
+
+172
+00:16:28,380 --> 00:16:33,720
+wavefront of 4 inches in diameter. And this 
+flat wavefront can serve as the basis for all  
+
+173
+00:16:33,720 --> 00:16:39,480
+kinds of interferometric tests. For example, we 
+can place 2 partially reflective flat interfaces  
+
+174
+00:16:39,480 --> 00:16:44,880
+into this output beam, one being a reference 
+interface and one being the interface that  
+
+175
+00:16:44,880 --> 00:16:48,780
+we like to test for flatness. And due to 
+the large coherence length of the light,  
+
+176
+00:16:48,780 --> 00:16:53,940
+more than 100m, these interfaces don’t have 
+the be necessarily very close together.  
+
+177
+00:16:55,140 --> 00:16:59,340
+The light reflecting off these surfaces 
+is directed back into the interferometer  
+
+178
+00:16:59,340 --> 00:17:03,960
+approximately along the same path as it came 
+from, goes through the small beam splitter  
+
+179
+00:17:03,960 --> 00:17:09,839
+again and is then collimated and projected on 
+a CCD chip. And this allows us to observe the  
+
+180
+00:17:09,839 --> 00:17:15,359
+interference pattern between the 2 reflections 
+and evaluate this visually on the monitor. 
+ 
+
+181
+00:17:16,380 --> 00:17:21,839
+Now, to steer the light of both the reference 
+and test surface exactly back through the tiny  
+
+182
+00:17:21,839 --> 00:17:25,799
+beam splitter here, is pretty hard. And 
+you don’t see anything with camera 1,  
+
+183
+00:17:25,800 --> 00:17:31,860
+until things are almost perfectly aligned. So, to 
+make life a lot easier, the people at ZYGO added  
+
+184
+00:17:31,860 --> 00:17:37,620
+this alignment functionality to the system. Part 
+of the light from the reflections can pass this  
+
+185
+00:17:37,620 --> 00:17:43,800
+larger beam splitter. This part continues straight 
+on, is reflected at a 90 degrees angle and then  
+
+186
+00:17:43,800 --> 00:17:49,920
+reaches a glass diffuser plate that contains a 
+cross-hair pattern. Because this diffusor plate is  
+
+187
+00:17:49,920 --> 00:17:55,440
+exactly at the focal distance of the collimation 
+lens, the reflections create tiny spots here. And  
+
+188
+00:17:55,440 --> 00:18:01,440
+their positions can be observed by camera 2 that 
+is only intended for alignment purposes. Now,  
+
+189
+00:18:01,440 --> 00:18:06,780
+this alignment unit has a much larger field of 
+view and what we can do now is simply align the  
+
+190
+00:18:06,780 --> 00:18:12,240
+position of surface reflections such that they 
+are at the center of the cross-hair. And when  
+
+191
+00:18:12,240 --> 00:18:17,520
+that is the case, the system is automatically also 
+aligned on camera 1 and we can immediately observe  
+
+192
+00:18:17,520 --> 00:18:23,340
+an interferogram. Now, the interferometers 
+that I made myself did not have this kind of  
+
+193
+00:18:23,340 --> 00:18:28,320
+feature and it must admit that this makes 
+aligning optics really a piece of cake.
+ 
+
+194
+00:18:29,820 --> 00:18:33,900
+Here you see the location of the collimation 
+lens, viewed from the outside of the instrument.  
+
+195
+00:18:33,900 --> 00:18:39,300
+In front of it is an adjustment mechanism 
+that is intended for mounting various  
+
+196
+00:18:39,300 --> 00:18:44,880
+reference surfaces to the interferometer 
+directly, like the F/0.75 transmission  
+
+197
+00:18:44,880 --> 00:18:50,820
+sphere that came with the interferometer. The 
+adjustment mechanism has 2 degrees of freedom,  
+
+198
+00:18:50,820 --> 00:18:56,340
+which are tip and tilt. This allows the angle of 
+the transmission reference to be oriented with  
+
+199
+00:18:56,340 --> 00:19:01,380
+respect to the surface under test.
+When testing optical components,  
+
+200
+00:19:01,380 --> 00:19:06,780
+you generally test the surface shape before 
+the interfaces get coated. And so in the case  
+
+201
+00:19:06,780 --> 00:19:12,300
+of glass this means that they reflect around 4% of 
+the incident light. So, the transmission reference  
+
+202
+00:19:12,300 --> 00:19:18,000
+also needs to reflect around 4% back into the 
+interferometer to get high-contrast fringes.
+ 
+
+203
+00:19:20,340 --> 00:19:27,780
+To test spherical surfaces, you need a spherical 
+reference surface that somehow reflects 4% of the  
+
+204
+00:19:27,780 --> 00:19:31,713
+light exiting the interferometer right back into 
+the instrument. Now the way this is achieved is as  
+
+205
+00:19:31,713 --> 00:19:37,500
+follows: here I’ve drawn a schematic of the inside 
+of a transmission sphere assembly to show you how  
+
+206
+00:19:37,500 --> 00:19:43,440
+that is achieved. The reference surface is the 
+last interface of the assembly, here indicated in  
+
+207
+00:19:43,440 --> 00:19:50,460
+yellow. All the other surfaces are anti-reflection 
+coated for the laser wavelength, but even more  
+
+208
+00:19:50,460 --> 00:19:54,780
+importantly, they are also designed in such a way, 
+that the light reaches the reference interface  
+
+209
+00:19:54,780 --> 00:20:01,260
+exactly perpendicular. And this means that it is 
+the only interface in the transmission sphere that  
+
+210
+00:20:01,260 --> 00:20:06,240
+sends a reflection back where it came from and 
+then enters the interferometer as a collimated  
+
+211
+00:20:06,240 --> 00:20:13,260
+beam. Of course, 96% of the light continues on 
+to the surface under test, which also reflects  
+
+212
+00:20:13,260 --> 00:20:18,780
+around 4%. And so we observe the interference 
+occurring between these 2 interfaces. 
+ 
+
+213
+00:20:20,940 --> 00:20:26,340
+With a spherical transmission reference, we 
+can test convex- as well as concave optics.  
+
+214
+00:20:26,340 --> 00:20:32,280
+For convex optics, only radii smaller than the 
+radius of the transmission sphere itself can be  
+
+215
+00:20:32,280 --> 00:20:37,560
+tested. For concave optics, the only limitation 
+for the radius to be tested is that it should be  
+
+216
+00:20:37,560 --> 00:20:43,320
+less than half of the maximum coherence length 
+of the light source which is in this case 50m. 
+ 
+
+217
+00:20:44,460 --> 00:20:48,120
+Now I want to save most of the experiments 
+that I had in mind for another video,  
+
+218
+00:20:48,120 --> 00:20:53,400
+but let’s just do one simple experiment. For 
+this test, we’ll just use the flat wavefront  
+
+219
+00:20:53,400 --> 00:20:58,560
+exiting the instrument. And what we will try to 
+measure is the difference in shape between the  
+
+220
+00:20:58,560 --> 00:21:04,740
+2 surfaces of a Zerodur test glass. This test 
+glass has one side which I know is very flat,  
+
+221
+00:21:04,740 --> 00:21:10,080
+around 1/20th of a wavelength. And this is 
+going to be our reference interface. But the  
+
+222
+00:21:10,080 --> 00:21:14,160
+other side is somewhat less flat. And what 
+we’ll try to find out is how much that is. 
+ 
+
+223
+00:21:16,380 --> 00:21:22,500
+The two interfaces are spaced 20 mm apart and 
+both reflect about 4% of the incident light. So  
+
+224
+00:21:22,500 --> 00:21:27,000
+we can just place the disk in the beam exiting 
+the interferometer, align the position of the  
+
+225
+00:21:27,000 --> 00:21:31,860
+2 reflections simultaneously and then look at 
+the interference pattern. And this is what it  
+
+226
+00:21:31,860 --> 00:21:37,020
+looks like. As you can see, we get a nice and 
+clear interference pattern, which by the way is  
+
+227
+00:21:37,020 --> 00:21:42,720
+extremely stable with no effects of vibrations 
+from the environment. That is because the two  
+
+228
+00:21:42,720 --> 00:21:47,100
+surfaces are basically mechanically connected 
+to each other by a solid piece of Zerodur.  
+
+229
+00:21:48,000 --> 00:21:53,160
+Now, the small circular spots are just dust 
+particles in the optical path and these are  
+
+230
+00:21:53,160 --> 00:21:58,200
+not important for our evaluation. All the 
+information about the difference in shape  
+
+231
+00:21:58,200 --> 00:22:03,420
+and orientation between the 2 surfaces is 
+contained in the 4 more or less vertical  
+
+232
+00:22:03,420 --> 00:22:07,200
+fringes. And because we know that 
+one side is almost perfectly flat,  
+
+233
+00:22:07,200 --> 00:22:12,720
+any curvature in the fringe pattern is the 
+result of non-flatness of the second surface. 
+ 
+
+234
+00:22:13,800 --> 00:22:19,140
+So, let’s try to evaluate this pattern visually. 
+The most obvious feature is of course the presence  
+
+235
+00:22:19,140 --> 00:22:25,440
+of the 4 vertical fringes, that indicate that 
+there is a wedge between the 2 interfaces in  
+
+236
+00:22:25,440 --> 00:22:30,120
+horizontal direction. And we can calculate how 
+large this wedge is, based on the number of  
+
+237
+00:22:30,120 --> 00:22:35,820
+fringes. It is a little over 4 Lambda wavefront, 
+meaning that there is a wedge half of that between  
+
+238
+00:22:35,820 --> 00:22:41,580
+the 2 surfaces, so just 2 wavelengths. Why 
+half? Well, that is because in reflection,  
+
+239
+00:22:41,580 --> 00:22:47,880
+any deviations in surface shape, lead to twice 
+the deviation in the wavefront shape. And so,  
+
+240
+00:22:47,880 --> 00:22:52,380
+deviations in surface shape are only 
+half of that observed in the wavefront.  
+
+241
+00:22:52,980 --> 00:23:00,900
+Now, since the wavelength of the laser is 632.8nm 
+and the wedge is 2 lambda between the 2 surface  
+
+242
+00:23:00,900 --> 00:23:07,920
+this, would mean a gradient in distance of 
+approx. 1.3 microns. But there is a little  
+
+243
+00:23:07,920 --> 00:23:14,100
+catch in this case. Because we are comparing 2 
+surfaces with Zerodur between them, we should  
+
+244
+00:23:14,100 --> 00:23:19,020
+actually use the wavelength in this material. 
+Which means that we should divide the wavelength  
+
+245
+00:23:19,020 --> 00:23:27,240
+in air or vacuum by the refractive index of 
+Zerodur, which is 1.54. So this means that the  
+
+246
+00:23:27,240 --> 00:23:35,520
+wedge is actually only 840nm. But which side is 
+thicker? It’s hard to tell because as for wedge,  
+
+247
+00:23:35,520 --> 00:23:41,100
+we would see the same type of interference pattern 
+in either case. So at this point, we don’t know.
+ 
+
+248
+00:23:42,540 --> 00:23:47,880
+Okay, let’s for a moment focus on the curvature 
+of the fringes now, which indicates a difference  
+
+249
+00:23:47,880 --> 00:23:52,980
+in the radius between the 2 surfaces. If 
+we look at how much the curvature in the  
+
+250
+00:23:52,980 --> 00:23:58,360
+fringes deviates from a straight line, we see 
+that it is largest here in the center, and it  
+
+251
+00:23:58,360 --> 00:24:04,860
+is about 0.4 times the fringe spacing, which 
+translates to 0.4 wavelength of height difference  
+
+252
+00:24:04,860 --> 00:24:11,340
+between edge and center of the disk. For the 
+surface error, which again is half of that,  
+
+253
+00:24:11,340 --> 00:24:17,580
+we find 0.2 wavelengths, Now, since we also 
+need to use the wavelength inside Zerodur here,  
+
+254
+00:24:17,580 --> 00:24:24,420
+this means that the surface curvature is 0.2*times 
+the wavelength divided by the refractive index,  
+
+255
+00:24:24,420 --> 00:24:30,180
+which results in a value of 82nm. But 
+in which direction is the curve? Is the  
+
+256
+00:24:30,180 --> 00:24:36,840
+surface under test 82nm concave or convex? As 
+with the direction of the wedge, there is no  
+
+257
+00:24:36,840 --> 00:24:42,240
+easy way to tell. So now we end up with these 4 
+configurations of which only one can be correct. 
+ 
+
+258
+00:24:43,800 --> 00:24:48,660
+With a little logic though, you could at this 
+point already discard 2 of these as infeasible.  
+
+259
+00:24:48,660 --> 00:24:55,080
+But of course, you want to know exactly which 
+configuration of the 4 is correct, right?  
+
+260
+00:24:55,800 --> 00:25:01,380
+So, if that is indeed the case, figure it out 
+yourself. You just need a 2 more pieces of  
+
+261
+00:25:01,380 --> 00:25:06,780
+information. Here is the first hint: if I press 
+my finger against the backside of the disk,  
+
+262
+00:25:06,780 --> 00:25:11,580
+so on the surface under test, we can observe 
+that the interferogram changes due to temperature  
+
+263
+00:25:11,580 --> 00:25:17,340
+increase of the material by the heat of my finger. 
+Locally, it is only a few degrees Celsius higher,  
+
+264
+00:25:17,340 --> 00:25:21,660
+but the effect is very noticeable because 
+we are measuring in the nanometer range.  
+
+265
+00:25:22,740 --> 00:25:27,660
+Now, the second piece of information you need 
+is about the expansion coefficient of the  
+
+266
+00:25:27,660 --> 00:25:33,780
+material. As you can see from the specifications 
+of Zerodur, it can be either positive or negative.  
+
+267
+00:25:34,440 --> 00:25:38,640
+But this piece of Zerodur has a positive 
+coefficient of thermal expansion, which  
+
+268
+00:25:38,640 --> 00:25:43,740
+means it expands with temperature increase. And 
+with these 2 additional pieces of information,  
+
+269
+00:25:43,740 --> 00:25:49,200
+it is possible tell which of these 4 options 
+is correct. Now, the first person to make  
+
+270
+00:25:49,200 --> 00:25:53,820
+a comment with the correct answer and 
+course why, owns the pinned comment.
+ 
+
+271
+00:25:55,320 --> 00:26:00,720
+Okay, so the latter was a very brief explanation 
+of how you can evaluate interferograms visually.  
+
+272
+00:26:00,720 --> 00:26:06,300
+And, the above example was actually relatively 
+easy. Imagine your interferogram looks something  
+
+273
+00:26:06,300 --> 00:26:11,880
+like this. Or this. In these cases, it would be 
+quite a bit more challenging to make accurate  
+
+274
+00:26:11,880 --> 00:26:17,340
+statements about the exact surface shape. This 
+is why in the next video about this subject,  
+
+275
+00:26:17,340 --> 00:26:23,580
+I have replaced the current analog camera with a 
+high-resolution IP-camera. This allows for very  
+
+276
+00:26:23,580 --> 00:26:28,980
+detailed evaluation of interferograms using 
+software. And with the help of this software,  
+
+277
+00:26:28,980 --> 00:26:34,320
+we can measure wedges, angles, surface 
+curvature, and even the effects of warm  
+
+278
+00:26:34,320 --> 00:26:39,720
+fingers very accurately. Also, we will take a look 
+at how to measure the shape of various optical  
+
+279
+00:26:39,720 --> 00:26:45,360
+surfaces, and the quality of lens assemblies. So, 
+hopefully I’ll see you in the next video again. 
+

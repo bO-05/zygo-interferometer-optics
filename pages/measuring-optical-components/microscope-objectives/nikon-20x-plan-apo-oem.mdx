@@ -1,0 +1,38 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Nikon 20x Plan APO OEM Objective
+
+A few years ago, I purchased an unmarked Nikon 20x Plan APO OEM objective on eBay for around $100. These objectives are widely available and can be used in various applications, such as maskless wafer steppers. Although the objective was in perfect condition when it arrived, I noticed some inconsistencies in its performance depending on how I used it.
+
+After publishing a video on my maskless wafer stepper, I received valuable feedback from the photomicrography.net forum community. They informed me that these particular Nikon objectives are modified versions designed for a different cover slip thickness compared to the standard Nikon microscope objectives. The forum thread suggested that these objectives perform better when used with 2 or 3 cover slips.
+
+## Measuring Spherical Aberration
+
+With the ZYGO interferometer, I decided to investigate the optimal cover slip thickness for this objective. Here's the process I followed:
+
+<Steps>
+### Step 1
+
+Measure the spherical aberration of the objective without a cover slip. The wavefront error was found to be 1 lambda, indicating that the objective would perform poorly without correction.
+
+### Step 2
+
+Take individual wavefront measurements with 0, 1, 2, 3, and 4 cover slips. The effect of adding more glass becomes evident, with the wavefront error flipping over between 2 and 3 cover slips of glass thickness.
+
+### Step 3
+
+Plot the peak-to-valley spherical aberration values against the total glass thickness in a graph. By fitting a line through the data points, we find that the minimum aberration occurs at around 0.42-0.43mm, which is between 2 and 3 cover slips.
+
+### Step 4
+
+Create a similar graph for the maximum Strehl ratio, which yields the same outcome.
+
+</Steps>
+
+<Callout>
+The optimal cover slip thickness for this modified Nikon 20x Plan APO OEM objective is approximately 0.42-0.43mm, which lies between 2 and 3 standard cover slips.
+</Callout>
+
+By adding a 0.42mm glass sheet when using this objective, we can effectively eliminate the spherical aberration and utilize the objective at its maximum performance level.
+
+This example demonstrates the importance of understanding the specific design parameters of microscope objectives, especially when dealing with modified or OEM versions. By using interferometry to measure wavefront errors and analyzing the effects of cover slip thickness, we can optimize the performance of these objectives and achieve the best possible results in our applications.
